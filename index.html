@@ -2,7 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="科研要闻">
+<meta name="theme-color" content="#1a1a2e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
 <title>每日要闻 · 2026-06-20</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -11,11 +16,21 @@ body {
     background: #f5f5f5;
     color: #1a1a1a;
     line-height: 1.6;
+    -webkit-tap-highlight-color: transparent;
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
+}
+@media (max-width: 480px) {
+    .container { padding: 10px; }
+    .header { padding: 24px 16px !important; border-radius: 10px !important; }
+    .header h1 { font-size: 22px !important; }
+    .group { padding: 16px !important; border-radius: 8px !important; }
+    .group-title { font-size: 16px !important; }
+    .art-title { font-size: 14px !important; }
+    .art-summary { font-size: 12px !important; }
 }
 .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
