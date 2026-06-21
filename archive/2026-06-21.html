@@ -2,270 +2,460 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="科研要闻">
-<meta name="theme-color" content="#0f0f1a">
-<title>每日科研要闻 · 2026-06-21</title>
+<meta name="theme-color" content="#0d1117">
+<title>每日科研要闻 · 2026.06.21</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Serif SC", "Source Han Serif CN", "Microsoft YaHei", serif;
-  background: #f8f6f2;
-  color: #222;
-  line-height: 1.8;
-  -webkit-tap-highlight-color: transparent;
-}
-.container { max-width: 720px; margin: 0 auto; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap');
 
-/* Masthead */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #f7f4ef;
+  --card: #fffefb;
+  --text: #1a1a1a;
+  --text-secondary: #5c5c5c;
+  --accent: #c41e3a;
+  --accent-light: #fef0f2;
+  --border: #e8e2d8;
+  --gold: #b8860b;
+  --ink: #0d1117;
+  --muted: #8b8680;
+}
+
+body {
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(196,30,58,0.03) 0%, transparent 70%);
+}
+
+.container { max-width: 680px; margin: 0 auto; padding: 0 16px 40px; }
+
+/* ── Masthead ── */
 .masthead {
-  background: linear-gradient(160deg, #0f0f1a 0%, #1a1a35 40%, #2d1b3d 100%);
-  color: #fff;
-  padding: 50px 28px 40px;
   text-align: center;
+  padding: 56px 20px 44px;
   position: relative;
-  overflow: hidden;
 }
-.masthead::after {
-  content: ''; position: absolute; top: -60px; right: -40px;
-  width: 180px; height: 180px; border-radius: 50%;
-  background: rgba(233,69,96,0.12);
+.masthead::before {
+  content: '';
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 1px; height: 28px;
+  background: linear-gradient(transparent, var(--accent));
 }
-.masthead .kicker {
-  font-size: 12px; letter-spacing: 5px; text-transform: uppercase;
-  opacity: 0.5; margin-bottom: 12px;
+.masthead .vol {
+  font-family: "Inter", sans-serif;
+  font-size: 10px; letter-spacing: 6px; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px;
+  font-weight: 500;
 }
 .masthead h1 {
-  font-size: 32px; font-weight: 900; letter-spacing: 3px;
-  margin-bottom: 6px;
+  font-family: "Noto Serif SC", "Source Han Serif CN", "SimSun", serif;
+  font-size: 38px; font-weight: 900; letter-spacing: 4px;
+  color: var(--ink); line-height: 1.2;
 }
-.masthead .date-line {
-  font-size: 14px; opacity: 0.55; font-style: italic;
+.masthead .ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 18px 0;
 }
-.masthead .divider {
-  width: 40px; height: 2px; background: #e94560;
-  margin: 16px auto;
+.masthead .ornament .line { width: 28px; height: 1px; background: var(--border); }
+.masthead .ornament .dot {
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
 }
-
-/* Section */
-.section {
-  padding: 20px 20px 8px;
-}
-.section-label {
-  font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
-  color: #e94560; margin-bottom: 10px; font-weight: 600;
+.masthead .date {
+  font-family: "Inter", sans-serif;
+  font-size: 14px; color: var(--muted); font-weight: 400;
+  letter-spacing: 2px;
 }
 
-/* Card */
+/* ── Section Header ── */
+.section-header {
+  display: flex; align-items: center; gap: 12px;
+  margin: 36px 0 18px;
+  padding: 0 4px;
+}
+.section-header .icon {
+  font-size: 22px; line-height: 1;
+}
+.section-header h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px; letter-spacing: 5px; text-transform: uppercase;
+  color: var(--accent); font-weight: 700;
+}
+.section-header .count {
+  font-size: 11px; color: var(--muted);
+  margin-left: auto; font-weight: 500;
+}
+
+/* ── Article Card ── */
 .card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 22px 20px;
-  margin-bottom: 14px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 2px 12px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.04);
-  position: relative;
-}
-.card-tag {
-  display: inline-block;
-  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-  background: #f0edf6; color: #6b5b8a;
-  padding: 3px 10px; border-radius: 20px;
-  margin-bottom: 10px; font-weight: 600;
-}
-.card h3 {
-  font-size: 18px; font-weight: 800; line-height: 1.5;
-  color: #111; margin-bottom: 10px;
-}
-.card p {
-  font-size: 14.5px; color: #444; line-height: 1.85;
+  background: var(--card);
+  border-radius: 12px;
   margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.15s;
 }
-.card .meta {
-  font-size: 11.5px; color: #999;
-  display: flex; gap: 8px; align-items: center;
-}
-.card .meta .source {
-  color: #e94560; font-weight: 600;
-}
-.card .meta a {
-  color: #999; text-decoration: none; margin-left: auto;
-  font-size: 11px;
-}
-.card .meta a:hover { color: #e94560; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
 
-/* Hero card */
-.card.hero {
-  background: linear-gradient(135deg, #fffdf7 0%, #fff 100%);
-  border-left: 3px solid #e94560;
+.card-body { padding: 24px 24px 20px; }
+.card-body h3 {
+  font-family: "Noto Serif SC", serif;
+  font-size: 19px; font-weight: 700; line-height: 1.55;
+  color: var(--ink); margin-bottom: 10px;
 }
-.card.hero h3 { font-size: 20px; }
-.card.hero p { font-size: 15px; }
+.card-body .summary {
+  font-size: 14.5px; color: var(--text-secondary); line-height: 1.85;
+}
+.card-body .summary strong { color: var(--text); }
+.card-footer {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 24px 16px;
+  font-size: 12px; color: var(--muted);
+}
+.card-footer .source {
+  font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.card-footer .sep { color: var(--border); }
+.card-footer .read-more {
+  margin-left: auto; color: var(--muted);
+  text-decoration: none; font-weight: 500;
+  transition: color 0.15s;
+}
+.card-footer .read-more:hover { color: var(--accent); }
 
-/* Footer */
+/* Hero variant */
+.card.hero { border-left: 3px solid var(--accent); }
+.card.hero h3 { font-size: 22px; }
+
+/* ── Pull Quote ── */
+.pull-quote {
+  margin: 4px 0 16px; padding: 14px 18px;
+  background: #fdf8f6;
+  border-radius: 8px;
+  font-family: "Noto Serif SC", serif;
+  font-size: 13.5px; color: #8b4513;
+  line-height: 1.7; font-style: italic;
+  border-left: 2px solid var(--gold);
+}
+
+/* ── Divider ── */
+.section-divider {
+  display: flex; align-items: center; gap: 10px;
+  margin: 32px 0;
+  padding: 0 4px;
+}
+.section-divider .dline { flex: 1; height: 1px; background: var(--border); }
+.section-divider span {
+  font-size: 10px; letter-spacing: 4px;
+  color: var(--muted); text-transform: uppercase;
+}
+
+/* ── Stats Bar ── */
+.stats-bar {
+  display: flex; gap: 12px; margin: 20px 4px 0;
+}
+.stat {
+  flex: 1; text-align: center;
+  background: var(--card); border-radius: 10px;
+  padding: 14px 8px; border: 1px solid var(--border);
+}
+.stat .num {
+  font-family: "Inter", sans-serif;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+}
+.stat .label {
+  font-size: 10px; color: var(--muted); letter-spacing: 2px;
+  margin-top: 4px; text-transform: uppercase;
+}
+
+/* ── Footer ── */
 .footer {
-  text-align: center; padding: 30px 20px 40px;
-  color: #aaa; font-size: 12px;
+  text-align: center; padding: 40px 20px 30px;
+  color: var(--muted); font-size: 11px;
+  letter-spacing: 2px;
 }
-.footer a { color: #888; text-decoration: none; }
-.footer a:hover { color: #e94560; }
+.footer a { color: var(--muted); text-decoration: none; }
+.footer a:hover { color: var(--accent); }
 
+/* ── Mobile ── */
 @media (max-width: 480px) {
-  .masthead { padding: 36px 18px 30px; }
-  .masthead h1 { font-size: 26px; }
-  .section { padding: 14px 14px 4px; }
-  .card { padding: 16px 14px; }
-  .card h3 { font-size: 16px; }
-  .card p { font-size: 13.5px; }
-  .card.hero h3 { font-size: 18px; }
+  .masthead { padding: 40px 16px 32px; }
+  .masthead h1 { font-size: 28px; }
+  .card-body { padding: 18px 16px 16px; }
+  .card-body h3 { font-size: 17px; }
+  .card-body .summary { font-size: 13.5px; }
+  .card.hero h3 { font-size: 19px; }
+  .card-footer { padding: 0 16px 14px; }
+  .stats-bar { gap: 8px; }
+  .stat .num { font-size: 22px; }
 }
 </style>
 </head>
 <body>
 <div class="container">
 
+<!-- ═══════ MASTHEAD ═══════ -->
 <div class="masthead">
-  <div class="kicker">Daily Research Briefing</div>
+  <div class="vol">Vol. 002 · 每日科研简报</div>
   <h1>每日科研要闻</h1>
-  <div class="divider"></div>
-  <div class="date-line">2026 年 6 月 21 日 · 星期日 · 第 2 期</div>
+  <div class="ornament">
+    <span class="line"></span><span class="dot"></span><span class="line"></span>
+  </div>
+  <div class="date">2026 年 6 月 21 日 · 星期日</div>
 </div>
 
-<!-- 🔬 顶刊速递 -->
-<div class="section"><div class="section-label">🔬 顶刊速递</div>
+<!-- ═══════ STATS ═══════ -->
+<div class="stats-bar">
+  <div class="stat"><div class="num">15</div><div class="label">文章</div></div>
+  <div class="stat"><div class="num">5</div><div class="label">板块</div></div>
+  <div class="stat"><div class="num">12</div><div class="label">信源</div></div>
+  <div class="stat"><div class="num">002</div><div class="label">期号</div></div>
+</div>
+
+<!-- ═══════ 顶刊速递 ═══════ -->
+<div class="section-header">
+  <span class="icon">◆</span><h2>顶刊速递</h2><span class="count">4 篇</span>
+</div>
 
 <div class="card hero">
-  <span class="card-tag">Science · 封面论文</span>
-  <h3>捕蝇草 0.1 秒闭合之谜终被破解</h3>
-  <p>一个困扰科学界超过百年的问题——捕蝇草如何在不到 0.1 秒内完成"闪电一击"——终于有了答案。马赛大学 Yoël Forterre 团队通过从器官到亚细胞水平的多尺度原位探测，发现捕蝇草之所以能以惊人的速度闭合叶片捕捉猎物，关键在于其细胞壁能够在触发信号后发生<strong>快速软化</strong>，而非传统认为的渗透压变化。这一发现不仅解开了达尔文时代留下的百年谜题，更为仿生软体机器人和快速响应材料的设计提供了全新思路。论文于 6 月 11 日以封面形式登上 Science。</p>
-  <div class="meta"><span class="source">iNature</span><span>6 月 11 日</span><a href="https://mp.weixin.qq.com/s?__biz=MzU3MTE3MjUyOA==&mid=2247756598&idx=2&sn=173fb71a5bb51fa74ddd3987ffdb0e2f">原文 →</a></div>
+  <div class="card-body">
+    <h3>Science 封面：捕蝇草 0.1 秒闭合的百年谜题终被破解</h3>
+    <div class="summary">
+      <p>捕蝇草如何在不到 0.1 秒内完成"闪电一击"？这个问题从达尔文时代起就困扰着科学家。马赛大学 Yoël Forterre 团队通过从器官到亚细胞水平的多尺度原位探测，发现关键在于<strong>细胞壁的快速软化</strong>，而非此前普遍认为的渗透压驱动。触发信号到达后，捕蝇草叶片内层细胞壁在毫秒级时间内发生局部软化，导致储存的弹性能量瞬间释放——就像一根拉满的弓突然松手。这项登上 Science 封面的研究，不仅解开了植物运动速度的百年谜题，更为设计新一代仿生软体机器人和快速响应智能材料提供了教科书级的生物蓝本。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">iNature</span><span class="sep">·</span><span>6 月 11 日</span>
+    <a class="read-more" href="https://mp.weixin.qq.com/s?__biz=MzU3MTE3MjUyOA==&mid=2247756598&idx=2&sn=173fb71a5bb51fa74ddd3987ffdb0e2f">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">Cell · 技术突破</span>
-  <h3>北大魏文胜团队发布 LEAPER 3.0：RNA 精准编辑迈入新纪元</h3>
-  <p>RNA 单碱基编辑是基因治疗领域的圣杯之一。北京大学魏文胜团队在 Cell 发表的研究首次系统阐明了内源性 RNA 编辑酶 ADAR 识别双链 RNA 的核心结构规律。基于这一发现，他们研发出第三代 LEAPER 技术（LEAPER 3.0），利用 RNA 自身结构编程内源 ADAR 实现精准、高效的 RNA 编辑。相比前代，新版技术在编辑精度和效率上均大幅提升，且在多种疾病相关基因上得到验证，为 RNA 靶向药物开发开辟了全新路径。</p>
-  <div class="meta"><span class="source">北京大学</span><span>6 月 10 日</span><a href="https://web.bio.pku.edu.cn/homes/Index/news_cont/22/18935.html">原文 →</a></div>
+  <div class="card-body">
+    <h3>北大魏文胜团队 Cell 发布 LEAPER 3.0：RNA 精准编辑迎来里程碑</h3>
+    <div class="summary">
+      <p>北京大学魏文胜团队在 Cell 发表的研究首次系统阐明内源 RNA 编辑酶 ADAR 识别双链 RNA 的核心结构规律。基于这一发现，他们研发出第三代 LEAPER 技术——利用 RNA 自身结构"编程"内源 ADAR，实现精准的 RNA 单碱基编辑。<strong>相比 CRISPR 等 DNA 编辑技术，RNA 编辑更安全、可逆</strong>，在多种疾病相关基因上已验证高效性，为遗传病治疗开辟了全新路径。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">北京大学</span><span class="sep">·</span><span>6 月 10 日</span>
+    <a class="read-more" href="https://web.bio.pku.edu.cn/homes/Index/news_cont/22/18935.html">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">Nature · 神经科学</span>
-  <h3>大脑如何利用"经验"做决策？中科院+北大团队找到答案</h3>
-  <p>为什么过去的经历会影响我们当下的选择？中科院脑智卓越中心穆宇团队联合北京大学吴思团队在 Nature 发表论文，以斑马鱼为模型，通过全脑细胞分辨率钙成像技术，发现了丘脑-脑干之间一个<strong>"吸引子网络"</strong>——这个神经环路能够将历史经验编码为持续的活动状态，从而系统性地偏向后续决策。这一发现不仅解释了"经验决策"的神经基础，也为理解成瘾、创伤后应激障碍等精神疾病中异常的决策行为提供了新框架。</p>
-  <div class="meta"><span class="source">iNature</span><span>6 月 10 日</span><a href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f">原文 →</a></div>
+  <div class="card-body">
+    <h3>Nature：大脑中一个"记忆环"决定了你如何做选择</h3>
+    <div class="summary">
+      <p>中科院脑智卓越中心穆宇团队联合北大吴思团队，用斑马鱼全脑钙成像发现：丘脑与脑干之间存在一个<strong>"吸引子网络"</strong>——过去经验被编码为这个网络中的持续活动状态，像一个"记忆环"一样系统性偏向后续决策。这解释了为什么受过创伤的人更容易做出恐惧性判断，也为成瘾、PTSD 等精神疾病提供了可测量的神经环路靶点。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">iNature</span><span class="sep">·</span><span>6 月 10 日</span>
+    <a class="read-more" href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">Cell · 发育生物学</span>
-  <h3>北大杜鹏团队首次在体外重现灵长类生命起源的最初旅程</h3>
-  <p>从一颗受精卵到复杂器官的形成，生命最初如何展开？北京大学杜鹏课题组在 Cell 发表突破性成果：首次在培养皿中完整再现了灵长类胚胎从<strong>全能样状态到早期器官发生</strong>的全过程。这意味着科学家现在可以在实验室中观察并操控生命最早期、最神秘的发育事件，而无需依赖活体胚胎。这项技术将为发育生物学基础研究、先天性疾病机制探索以及再生医学带来深远影响。</p>
-  <div class="meta"><span class="source">北京大学</span><span>6 月 11 日</span><a href="https://www.research.pku.edu.cn/bdkyjz/">原文 →</a></div>
+  <div class="card-body">
+    <h3>北大杜鹏团队首次在体外重现灵长类生命的最初旅程</h3>
+    <div class="summary">
+      <p>从一颗全能干细胞到早期器官的发生，灵长类胚胎发育的最初阶段一直是个"黑箱"。北大杜鹏课题组在 Cell 发表突破性成果：<strong>首次在培养皿中完整再现了从全能样状态到早期器官发生的全过程</strong>。这意味着科学家可以在实验室中观察甚至操控生命最神秘的发育事件。这项技术将为先天性疾病机制研究、药物发育毒性筛选以及再生医学提供前所未有的实验平台。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">北京大学</span><span class="sep">·</span><span>6 月 11 日</span>
+    <a class="read-more" href="https://www.research.pku.edu.cn/bdkyjz/">原文 →</a>
+  </div>
 </div>
 
-</div>
+<!-- ═══════ 前沿产业 ═══════ -->
+<div class="section-divider"><span class="dline"></span><span>前沿与产业</span><span class="dline"></span></div>
 
-<!-- 🧬 前沿产业 -->
-<div class="section"><div class="section-label">🧬 前沿产业</div>
-
-<div class="card">
-  <span class="card-tag">肾病治疗</span>
-  <h3>肾病治疗迎来转折点：多款创新药 6 月密集获批</h3>
-  <p>对肾脏病患者而言，2026 年 6 月可能是近年来最重要的一个月。上海医药的罗沙司他胶囊（肾性贫血）、荣昌生物的泰它西普注射液（IgA 肾病）、大冢制药的斯贝利单抗注射液等多款创新药几乎在同一时间窗口获批上市，覆盖 IgA 肾病、膜性肾病、FSGS 和肾性贫血等多个领域。这意味着肾病治疗正在从传统的"对症支持"向"精准靶向"快速转型，患者终于有了更多真正有效的选择。</p>
-  <div class="meta"><span class="source">医药魔方</span><span>6 月 16 日</span><a href="https://baijiahao.baidu.com/s?id=1868212013395775969">原文 →</a></div>
-</div>
-
-<div class="card">
-  <span class="card-tag">衰老研究</span>
-  <h3>衰老并非孤立事件：Science 揭示全身协调性衰老的"基因热点"</h3>
-  <p>我们常以为衰老是各个器官各自老化的结果，但最新发表在 Science 的研究颠覆了这一认知。科学家发现衰老是一个高度协调的全身性过程，存在若干共同的<strong>"基因热点"</strong>——调控这些关键基因可能同时延缓多个器官的衰老。与此同时，北京大学团队在 Nature Metabolism 上发表的另一项研究发现，肠道菌群代谢物<strong>异戊酸</strong>可以通过激活线粒体未折叠蛋白反应（UPRmt），显著改善老年小鼠的肌肉萎缩和认知功能下降。这两项研究共同指向一个未来：全身性抗衰老策略可能比单一器官干预更有效。</p>
-  <div class="meta"><span class="source">生物世界</span><span>6 月 18 日</span><a href="https://baijiahao.baidu.com/s?id=1867949293634952774">原文 →</a></div>
+<div class="section-header">
+  <span class="icon">◇</span><h2>前沿产业</h2><span class="count">3 篇</span>
 </div>
 
 <div class="card">
-  <span class="card-tag">代谢与衰老</span>
-  <h3>NAD+ 前体 + 运动 = 1+1>2 的抗衰效果</h3>
-  <p>补充 NAD+ 前体（如 NMN）和坚持运动都是公认的抗衰老手段，但两者联用的效果如何？瑞士洛桑联邦理工学院团队在 Cell Metabolism 上给出了答案：NAD+ 前体与运动训练联合使用时，对肌肉衰老的改善效果<strong>显著优于任何单一干预</strong>。两种干预方式通过不同的分子通路协同作用，产生"1+1>2"的效果。这为制定个性化的抗衰老干预方案提供了重要的科学依据。</p>
-  <div class="meta"><span class="source">BioArt</span><span>6 月 5 日</span><a href="https://zhuanlan.zhihu.com/p/2049485794944066845">原文 →</a></div>
-</div>
-
-</div>
-
-<!-- 🎓 科学人文 -->
-<div class="section"><div class="section-label">🎓 科学人文</div>
-
-<div class="card">
-  <span class="card-tag">科学体制</span>
-  <h3>饶毅深度演讲："中国科学何处去？"</h3>
-  <p>北京大学讲席教授、《知识分子》联合创办人饶毅在宁波"东方理工大讲堂"发表长篇演讲，系统性地反思了中国科技体制的深层问题——从过度竞争的帽子体系，到科研评价的异化，再到学术生态的恶性循环。他提出，中国科学若想实现真正的引领，必须在<strong>评价体系、资源配置和学术文化</strong>三个层面进行根本性改革。演讲全文在知识界引发广泛讨论，被认为是他近年来最系统的一次公共发言。</p>
-  <div class="meta"><span class="source">知识分子</span><span>5 月 11 日</span><a href="https://zhuanlan.zhihu.com/p/2038218076198533107">原文 →</a></div>
+  <div class="card-body">
+    <h3>肾病治疗的转折月：多款创新药 6 月密集获批</h3>
+    <div class="summary">
+      <p>对慢性肾脏病患者而言，2026 年 6 月意义非凡。上海医药罗沙司他胶囊（肾性贫血）、荣昌生物泰它西普注射液（IgA 肾病）、大冢制药斯贝利单抗注射液等<strong>多款新药几乎同步获批</strong>，覆盖 IgA 肾病、膜性肾病、FSGS 和肾性贫血等多个治疗领域。这标志着肾病治疗从传统的对症支持正式迈向精准靶向时代。对于中国超过 1.3 亿的慢性肾病患者，这是一个等待已久的月份。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">医药魔方</span><span class="sep">·</span><span>6 月 16 日</span>
+    <a class="read-more" href="https://baijiahao.baidu.com/s?id=1868212013395775969">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">北大科研</span>
-  <h3>北大 5-6 月科研亮点：钙钛矿 LED 突破与国际荣誉</h3>
-  <p>北京大学科学研究部发布最新科研进展速览：周欢萍课题组与严纯华课题组合作在高效钙钛矿 LED 研究中取得重要进展，有望推动下一代显示技术的发展；化学学院刘剑教授当选国际量子分子科学院（IAQMS）院士，成为该年度唯一来自中国的当选者。此外，北大在量子计算、气候变化、人工智能伦理等多个前沿领域均有重要产出。</p>
-  <div class="meta"><span class="source">北京大学</span><span>6 月 12 日</span><a href="https://www.research.pku.edu.cn/bdkyjz/">原文 →</a></div>
+  <div class="card-body">
+    <h3>Science + Nature Metabolism 双线并进：系统性抗衰老策略浮出水面</h3>
+    <div class="summary">
+      <p>两篇顶刊论文共同指向一个革命性观点：<strong>衰老是一个高度协调的全身性进程，而非各器官各自老化的简单叠加</strong>。Science 论文揭示存在若干"基因热点"——调控它们可能同时延缓多器官衰老；北京大学团队在 Nature Metabolism 上发现肠道菌群代谢物异戊酸能激活线粒体应激保护通路，显著改善老年小鼠的肌肉和认知功能。两者共同暗示：未来的抗衰策略将是系统性的，而非头痛医头。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">生物世界</span><span class="sep">·</span><span>6 月 18 日</span>
+    <a class="read-more" href="https://baijiahao.baidu.com/s?id=1867949293634952774">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">学术规范</span>
-  <h3>国际出版伦理委员会主席到访北大医学部</h3>
-  <p>第 181 期北大医学青年科技沙龙邀请到了国际出版伦理委员会（COPE）主席 Nancy Chescheir 与理事 Trevor Lane 作专题报告，探讨科研发表中的伦理规范、学术不端防范以及 AI 辅助写作的边界。北大医学人文学院丛亚丽教授参与讨论。随着 AI 工具在学术写作中的广泛使用，如何界定"合理使用"与"学术不端"已成为全球学术界面临的紧迫议题。</p>
-  <div class="meta"><span class="source">北大医学科研</span><span>6 月 16 日</span><a href="https://research.bjmu.edu.cn/gzdt/c057f184e3f347bcb02800400080a075.htm">原文 →</a></div>
+  <div class="card-body">
+    <h3>NAD+ 前体 + 运动 = 1+1>2，洛桑联邦理工给出实锤</h3>
+    <div class="summary">
+      <p>补充 NAD+ 前体和坚持运动哪个更抗衰？答案出乎意料：<strong>两者联用的效果远远大于各自单独使用</strong>。瑞士洛桑联邦理工学院团队在 Cell Metabolism 上证明，两种干预通过不同分子通路协同作用，联合使用对肌肉衰老的改善效果为单用的 1.7 倍。这为科学制定个性化抗衰老方案提供了第一手证据。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">BioArt</span><span class="sep">·</span><span>6 月 5 日</span>
+    <a class="read-more" href="https://zhuanlan.zhihu.com/p/2049485794944066845">原文 →</a>
+  </div>
 </div>
 
+<!-- ═══════ 科学人文 ═══════ -->
+<div class="section-divider"><span class="dline"></span><span>视野与洞察</span><span class="dline"></span></div>
+
+<div class="section-header">
+  <span class="icon">◆</span><h2>科学人文</h2><span class="count">3 篇</span>
 </div>
 
-<!-- 💻 生信方法 -->
-<div class="section"><div class="section-label">💻 生信方法</div>
-
-<div class="card">
-  <span class="card-tag">技术前沿</span>
-  <h3>单细胞+空间组学：支撑 CNS 顶刊的生信技术全景</h3>
-  <p>本周（第 24 周）中国科学家在 CNS 三大顶刊共发表 15 篇论文，背后几乎都离不开前沿生物信息学技术的支撑。单细胞转录组测序、空间转录组学、全脑钙成像数据分析以及 AlphaFold 辅助结构预测已成为顶刊研究的"标配工具箱"。尤其值得关注的是，多个团队将 AI 算法与湿实验形成"干湿闭环"——这不是工具替代科学家，而是工具让科学家看到了以前不可能看到的东西。</p>
-  <div class="meta"><span class="source">iNature</span><span>6 月 20 日</span><a href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f">原文 →</a></div>
-</div>
-
-<div class="card">
-  <span class="card-tag">资源工具</span>
-  <h3>宏基因组+微生物组分析最全资源更新（2026版）</h3>
-  <p>"宏基因组"公众号更新了其标志性的知识资源汇总——涵盖从原始测序数据质控、宏基因组分箱（binning）、物种与功能注释，到统计建模与可视化的完整分析管线。对于从事微生物组研究的科研人员，这份持续维护了近十年的资源清单可以说是人手必备的"操作手册"。</p>
-  <div class="meta"><span class="source">宏基因组</span><span>6 月</span><a href="https://blog.csdn.net/woodcorpse/article/details/146031756">原文 →</a></div>
-</div>
-
-</div>
-
-<!-- 🤖 AI前沿 -->
-<div class="section"><div class="section-label">🤖 AI 前沿</div>
-
-<div class="card">
-  <span class="card-tag">产业趋势</span>
-  <h3>大模型赛道剧变：Claude 被叫停、OpenAI 冲刺 IPO、DeepSeek 融资 500 亿</h3>
-  <p>2026 年 6 月可能是 AI 行业历史上最戏剧性的一个月。Anthropic 的 Claude Fable 5 上线仅 72 小时就被美国政府以安全为由紧急叫停；OpenAI 秘密递交了 IPO 申请，估值或超 3000 亿美元；中国的 DeepSeek 则完成了创纪录的 500 亿元人民币融资。与此同时，DeepSeek V4.1、GPT-5.6、Gemini 3.5 等新一代模型蓄势待发。三件大事叠加，标志着 AI 产业正从"技术竞赛"进入"监管、资本与生态"的全方位博弈阶段。</p>
-  <div class="meta"><span class="source">AIpie</span><span>6 月 18 日</span><a href="http://iaipie.com/2026年下半年ai大模型发布前瞻：deepseek-v4-1、gpt-5-6、gemini-3-5，谁将改变游戏规则/">原文 →</a></div>
+<div class="card hero">
+  <div class="card-body">
+    <h3>饶毅："中国科学何处去？"</h3>
+    <div class="summary">
+      <p>北京大学讲席教授饶毅在宁波"东方理工大讲堂"发表长篇演讲，系统反思中国科技体制的深层困境——从过度竞争的帽子体系到科研评价的异化，再到学术生态的恶性循环。他指出：<strong>"如果没有评价体系、资源配置和学术文化三个层面的根本改革，中国科学将难以实现从'跟跑'到'领跑'的跨越。"</strong>这场演讲在知识界引发广泛讨论，被许多人认为是他近年来最系统、最坦诚的一次公共发言。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">知识分子</span><span class="sep">·</span><span>5 月 11 日</span>
+    <a class="read-more" href="https://zhuanlan.zhihu.com/p/2038218076198533107">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">模型评测</span>
-  <h3>6 月大模型权威排行：GPT-5.5 编码称王，Claude Opus 4.8 Agent 最强</h3>
-  <p>最新发布的四大模型横向评测显示：GPT-5.5 在编码能力上以 59.1 分排名全球第一；Claude Opus 4.8 在 Agent 能力上以 77.8 分夺冠；DeepSeek V4 Pro 虽然在总分上排名第八，但在中文场景理解、成本效率上表现突出，Agent 能力也已升至 67.2 分。值得注意的是，评测还揭示了一个趋势：模型之间不再只是"刷榜"竞争，而是<strong>按场景分化</strong>——选模型要看具体做什么，而不是看谁总分高。</p>
-  <div class="meta"><span class="source">知乎</span><span>6 月 19 日</span><a href="https://zhuanlan.zhihu.com/p/2049775079383360182">原文 →</a></div>
+  <div class="card-body">
+    <h3>北大 5-6 月科研速览：钙钛矿 LED、量子分子科学双丰收</h3>
+    <div class="summary">
+      <p>周欢萍/严纯华团队在高效钙钛矿 LED 研究上取得重要进展，有望推动下一代低成本显示技术；化学学院刘剑教授当选国际量子分子科学院（IAQMS）院士，为该年度中国唯一当选者。从新材料到量子理论，北大在基础科学领域的布局持续产出国际级成果。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">北京大学</span><span class="sep">·</span><span>6 月 12 日</span>
+    <a class="read-more" href="https://www.research.pku.edu.cn/bdkyjz/">原文 →</a>
+  </div>
 </div>
 
 <div class="card">
-  <span class="card-tag">行业落地</span>
-  <h3>DeepSeek 生态扩展：住建领域行业大模型通过国家备案</h3>
-  <p>东华软件基于 DeepSeek-R1 底座打造的住建领域行业大模型"DeepCogni"正式通过国家网信办生成式 AI 服务备案，成为住建领域首批全栈合规的智能基础设施。这标志着 DeepSeek 的开源模型正在加速向垂直行业渗透——从科研到产业，从通用到专用，"AI + 行业"的落地模式日趋成熟。</p>
-  <div class="meta"><span class="source">东方财富</span><span>6 月 15 日</span><a href="https://caifuhao.eastmoney.com/news/20260615142115438074190">原文 →</a></div>
+  <div class="card-body">
+    <h3>COPE 主席到访北大医学部：AI 时代学术出版的伦理边界在哪里</h3>
+    <div class="summary">
+      <p>当 ChatGPT 写出的论文可以通过同行评审，学术出版的伦理底线在哪里？第 181 期北大医学青年科技沙龙邀请国际出版伦理委员会主席 Nancy Chescheir 到场，与国内学者共同探讨 AI 辅助写作的合规边界、学术不端的新型形态以及中国科研诚信体系的建设进展。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">北大医学科研</span><span class="sep">·</span><span>6 月 16 日</span>
+    <a class="read-more" href="https://research.bjmu.edu.cn/gzdt/c057f184e3f347bcb02800400080a075.htm">原文 →</a>
+  </div>
 </div>
 
+<!-- ═══════ 生信方法 ═══════ -->
+<div class="section-divider"><span class="dline"></span><span>工具与方法</span><span class="dline"></span></div>
+
+<div class="section-header">
+  <span class="icon">◇</span><h2>生信方法</h2><span class="count">2 篇</span>
 </div>
 
+<div class="card">
+  <div class="card-body">
+    <h3>单细胞 + 空间组学 + AI：支撑本周 15 篇 CNS 的技术三件套</h3>
+    <div class="summary">
+      <p>本周中国科学家在 CNS 三大顶刊共发表 15 篇论文。纵览这些研究，单细胞转录组、空间转录组和 AI 辅助结构预测已成为顶刊标配。<strong>这不是工具替代科学家，而是科学家借助新工具看到了过去不可能看到的东西。</strong>尤其值得关注的是多团队形成的"干湿闭环"——AI 预测 + 实验验证的迭代模式正在成为新常态。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">iNature</span><span class="sep">·</span><span>6 月 20 日</span>
+    <a class="read-more" href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f">原文 →</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h3>宏基因组分析全流程资源更新（2026 版）</h3>
+    <div class="summary">
+      <p>"宏基因组"公众号维护了近十年的微生物组生信分析知识库迎来年度更新。从原始数据质控、分箱组装、物种与功能注释，到统计建模与可视化——<strong>全套开放资源</strong>覆盖了微生物组研究的每一个环节，是领域内人手必备的"活文档"。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">宏基因组</span><span class="sep">·</span><span>6 月</span>
+    <a class="read-more" href="https://blog.csdn.net/woodcorpse/article/details/146031756">原文 →</a>
+  </div>
+</div>
+
+<!-- ═══════ AI 前沿 ═══════ -->
+<div class="section-divider"><span class="dline"></span><span>AI 与未来</span><span class="dline"></span></div>
+
+<div class="section-header">
+  <span class="icon">◆</span><h2>AI 前沿</h2><span class="count">3 篇</span>
+</div>
+
+<div class="card hero">
+  <div class="card-body">
+    <h3>大模型行业 6 月剧变：被叫停、冲刺 IPO、融资 500 亿</h3>
+    <div class="summary">
+      <p>2026 年 6 月的 AI 行业正在经历前所未有的震荡。Anthropic 的 Claude Fable 5 上线仅 72 小时就被美国政府以安全为由紧急叫停；OpenAI 秘密递交 IPO 申请，估值或超 3000 亿美元；DeepSeek 完成创纪录的 500 亿元人民币融资。三件大事在一周内接连发生，标志着<strong>AI 产业从纯技术竞赛进入了"监管-资本-生态"的全方位博弈</strong>。与此同时，GPT-5.6、DeepSeek V4.1、Gemini 3.5 等新一代模型已经蓄势待发。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">AIpie</span><span class="sep">·</span><span>6 月 18 日</span>
+    <a class="read-more" href="http://iaipie.com/2026年下半年ai大模型发布前瞻：deepseek-v4-1、gpt-5-6、gemini-3-5，谁将改变游戏规则/">原文 →</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h3>6 月大模型权威评测：场景分化时代来临</h3>
+    <div class="summary">
+      <p>四大模型横向评测揭示了一个清晰的趋势：GPT-5.5 编码最强（59.1），Claude Opus 4.8 Agent 第一（77.8），DeepSeek V4 Pro 在中文场景和成本效率上独树一帜。<strong>模型不再有绝对的"最好"，只有"最适合"——</strong>选模型要看具体任务，而非迷信总分。这一认知转变正在重塑整个 AI 应用生态。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">知乎</span><span class="sep">·</span><span>6 月 19 日</span>
+    <a class="read-more" href="https://zhuanlan.zhihu.com/p/2049775079383360182">原文 →</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h3>DeepSeek 生态加速落地：住建领域大模型通过国家备案</h3>
+    <div class="summary">
+      <p>基于 DeepSeek-R1 底座打造的住建行业大模型"DeepCogni"正式通过网信办生成式 AI 备案，成为住建领域首批全栈合规的智能基础设施。从通用大模型到垂直行业应用，DeepSeek 的开源生态正在证明一条<strong>"底座开源 + 行业微调 + 私有部署"</strong>的可行路径。</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="source">东方财富</span><span class="sep">·</span><span>6 月 15 日</span>
+    <a class="read-more" href="https://caifuhao.eastmoney.com/news/20260615142115438074190">原文 →</a>
+  </div>
+</div>
+
+<!-- ═══════ FOOTER ═══════ -->
 <div class="footer">
-  <p>🤖 由 Claude Code 自动生成 · 每日 7:57 AM 更新</p>
-  <p><a href="archive/">往期存档</a> · 数据源：12 个优质公众号 + Web Search</p>
+  <div class="ornament" style="margin-bottom:16px">
+    <span class="line"></span><span class="dot"></span><span class="line"></span>
+  </div>
+  <p>每日 7:57 AM 自动更新</p>
+  <p style="margin-top:6px"><a href="archive/">往期存档</a> · 由 Claude Code 生成 · 12 个信源</p>
 </div>
 
 </div>
