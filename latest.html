@@ -8,166 +8,229 @@
 <meta name="apple-mobile-web-app-title" content="科研要闻">
 <meta name="theme-color" content="#1a1a2e">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
-<title>每日要闻 · 2026-06-20</title>
+<title>每日要闻 · 2026-06-21</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: #f5f5f5;
-    color: #1a1a1a;
-    line-height: 1.6;
-    -webkit-tap-highlight-color: transparent;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 16px;
-}
-@media (max-width: 480px) {
-    .container { padding: 10px; }
-    .header { padding: 24px 16px !important; border-radius: 10px !important; }
-    .header h1 { font-size: 22px !important; }
-    .group { padding: 16px !important; border-radius: 8px !important; }
-    .group-title { font-size: 16px !important; }
-    .art-title { font-size: 14px !important; }
-    .art-summary { font-size: 12px !important; }
-}
-.header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 12px;
-    margin-bottom: 30px;
-}
-.header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.header .date {
-    font-size: 14px;
-    opacity: 0.7;
-    margin-top: 8px;
-}
-.header .meta {
-    font-size: 12px;
-    opacity: 0.5;
-    margin-top: 4px;
-}
-.group {
-    background: white;
-    border-radius: 10px;
-    padding: 24px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-}
-.group-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1a1a2e;
-    border-bottom: 2px solid #e8e8e8;
-    padding-bottom: 10px;
-    margin-bottom: 16px;
-}
-.group-title .count {
-    font-size: 13px;
-    font-weight: 400;
-    color: #999;
-    margin-left: 8px;
-}
-.article {
-    display: flex;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.6; -webkit-tap-highlight-color: transparent; }
+.container { max-width: 800px; margin: 0 auto; padding: 16px; }
+.header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 40px 20px; text-align: center; border-radius: 12px; margin-bottom: 30px; }
+.header h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; }
+.header .date { font-size: 14px; opacity: 0.7; margin-top: 8px; }
+.header .meta { font-size: 12px; opacity: 0.5; margin-top: 4px; }
+.group { background: white; border-radius: 10px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.group-title { font-size: 18px; font-weight: 700; color: #1a1a2e; border-bottom: 2px solid #e8e8e8; padding-bottom: 10px; margin-bottom: 16px; }
+.group-title .count { font-size: 13px; font-weight: 400; color: #999; margin-left: 8px; }
+.article { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
 .article:last-child { border-bottom: none; }
-.art-num {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    background: #1a1a2e;
-    color: white;
-    border-radius: 50%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2px;
-}
+.art-num { flex-shrink: 0; width: 24px; height: 24px; background: #1a1a2e; color: white; border-radius: 50%; font-size: 12px; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
 .art-body { flex: 1; min-width: 0; }
-.art-title {
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a1a2e;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 4px;
-}
+.art-title { font-size: 15px; font-weight: 600; color: #1a1a2e; text-decoration: none; display: block; margin-bottom: 4px; }
 .art-title:hover { color: #e94560; }
-.art-summary {
-    font-size: 13px;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 4px;
-}
-.art-date {
-    font-size: 11px;
-    color: #aaa;
-}
-.empty-note {
-    color: #999;
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
-}
-.footer {
-    text-align: center;
-    padding: 30px;
-    color: #999;
-    font-size: 12px;
-}
+.art-summary { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 4px; }
+.art-date { font-size: 11px; color: #aaa; }
+.art-source { font-size: 11px; color: #e94560; margin-left: 8px; }
+.empty-note { color: #999; font-size: 14px; text-align: center; padding: 20px; }
+.footer { text-align: center; padding: 30px; color: #999; font-size: 12px; }
 .footer a { color: #1a1a2e; }
+@media (max-width: 480px) {
+  .container { padding: 10px; }
+  .header { padding: 24px 16px !important; border-radius: 10px !important; }
+  .header h1 { font-size: 22px !important; }
+  .group { padding: 16px !important; border-radius: 8px !important; }
+  .group-title { font-size: 16px !important; }
+  .art-title { font-size: 14px !important; }
+  .art-summary { font-size: 12px !important; }
+}
 </style>
 </head>
 <body>
 <div class="container">
+
 <div class="header">
-    <h1>📰 每日科研要闻</h1>
-    <div class="date">2026-06-20</div>
-    <div class="meta">由 Claude Code Digest 自动生成 · 数据源: 12 个优质公众号</div>
+  <h1>📰 每日科研要闻</h1>
+  <div class="date">2026年6月21日 · 星期日</div>
+  <div class="meta">由 Claude Code 自动生成 · 数据源: 12个优质公众号 + Web Search</div>
 </div>
 
-    <section class="group">
-        <h2 class="group-title">🔬 顶刊速递</h2>
-        <p class="empty-note">暂无今日更新</p>
-    </section>
+<!-- 🔬 顶刊速递 -->
+<section class="group">
+  <h2 class="group-title">🔬 顶刊速递 <span class="count">4 篇</span></h2>
+  <div class="articles">
 
-    <section class="group">
-        <h2 class="group-title">🧬 前沿产业</h2>
-        <p class="empty-note">暂无今日更新</p>
-    </section>
+    <div class="article">
+      <div class="art-num">1</div>
+      <div class="art-body">
+        <a href="https://mp.weixin.qq.com/s?__biz=MzU3MTE3MjUyOA==&mid=2247756598&idx=2&sn=173fb71a5bb51fa74ddd3987ffdb0e2f" class="art-title" target="_blank">Science 封面：破解捕蝇草"闪电一击"的百年谜题</a>
+        <p class="art-summary">马赛大学团队通过多尺度原位探测，揭示细胞壁快速软化是捕蝇草0.1秒闭合的关键机制，登上 Science 封面。</p>
+        <span class="art-date">6月11日</span><span class="art-source">iNature</span>
+      </div>
+    </div>
 
-    <section class="group">
-        <h2 class="group-title">🎓 科学人文</h2>
-        <p class="empty-note">暂无今日更新</p>
-    </section>
+    <div class="article">
+      <div class="art-num">2</div>
+      <div class="art-body">
+        <a href="https://web.bio.pku.edu.cn/homes/Index/news_cont/22/18935.html" class="art-title" target="_blank">Cell：北大魏文胜团队发布 LEAPER 3.0，精准 RNA 编辑迎新突破</a>
+        <p class="art-summary">首次系统阐明内源 ADAR 识别 dsRNA 的结构规律，开发出新一代 RNA 单碱基编辑技术，大幅提升精准度。</p>
+        <span class="art-date">6月10日</span><span class="art-source">北京大学</span>
+      </div>
+    </div>
 
-    <section class="group">
-        <h2 class="group-title">💻 生信方法</h2>
-        <p class="empty-note">暂无今日更新</p>
-    </section>
+    <div class="article">
+      <div class="art-num">3</div>
+      <div class="art-body">
+        <a href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f" class="art-title" target="_blank">Nature：丘脑-脑干吸引子网络如何驱动经验决策</a>
+        <p class="art-summary">中科院脑智卓越中心穆宇团队联合北大吴思团队，用斑马鱼全脑成像揭示决策背后的神经环路机制。</p>
+        <span class="art-date">6月10日</span><span class="art-source">iNature</span>
+      </div>
+    </div>
 
-    <section class="group">
-        <h2 class="group-title">🤖 AI前沿</h2>
-        <p class="empty-note">暂无今日更新</p>
-    </section>
+    <div class="article">
+      <div class="art-num">4</div>
+      <div class="art-body">
+        <a href="https://www.research.pku.edu.cn/bdkyjz/" class="art-title" target="_blank">Cell：北大杜鹏团队首次体外重现灵长类早期发育全过程</a>
+        <p class="art-summary">从全能样状态到早期器官发生，在培养皿中完整再现灵长类胚胎发育的关键阶段，为发育生物学开辟新范式。</p>
+        <span class="art-date">6月11日</span><span class="art-source">北京大学</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🧬 前沿产业 -->
+<section class="group">
+  <h2 class="group-title">🧬 前沿产业 <span class="count">3 篇</span></h2>
+  <div class="articles">
+
+    <div class="article">
+      <div class="art-num">1</div>
+      <div class="art-body">
+        <a href="https://baijiahao.baidu.com/s?id=1868212013395775969" class="art-title" target="_blank">国内肾病创新药密集获批，治疗格局加速升级</a>
+        <p class="art-summary">6月以来多款肾病新药获批上市，覆盖 IgA 肾病、膜性肾病、FSGS，肾病治疗从对症迈入精准时代。</p>
+        <span class="art-date">6月16日</span><span class="art-source">医药魔方</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">2</div>
+      <div class="art-body">
+        <a href="https://baijiahao.baidu.com/s?id=1867949293634952774" class="art-title" target="_blank">Science：衰老是全身性协调过程，共同"基因热点"或成抗衰靶点</a>
+        <p class="art-summary">最新研究揭示衰老并非孤立事件，而是多器官协调进程；肠道菌群代谢物异戊酸被发现可显著延缓肌肉和认知衰老。</p>
+        <span class="art-date">6月18日</span><span class="art-source">生物世界</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">3</div>
+      <div class="art-body">
+        <a href="https://zhuanlan.zhihu.com/p/2049485794944066845" class="art-title" target="_blank">Cell Metabolism：NAD+前体联合运动协同延缓肌肉衰老</a>
+        <p class="art-summary">瑞士洛桑联邦理工学院团队发现 NAD+ 前体与运动训练联用，对肌肉衰老的改善效果优于单一干预。</p>
+        <span class="art-date">6月5日</span><span class="art-source">BioArt</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🎓 科学人文 -->
+<section class="group">
+  <h2 class="group-title">🎓 科学人文 <span class="count">3 篇</span></h2>
+  <div class="articles">
+
+    <div class="article">
+      <div class="art-num">1</div>
+      <div class="art-body">
+        <a href="https://zhuanlan.zhihu.com/p/2038218076198533107" class="art-title" target="_blank">饶毅演讲：中国科学何处去？</a>
+        <p class="art-summary">北大讲席教授饶毅在"东方理工大讲堂"发表演讲，系统反思中国科技体制深层问题，引发学界广泛讨论。</p>
+        <span class="art-date">5月11日</span><span class="art-source">知识分子</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">2</div>
+      <div class="art-body">
+        <a href="https://www.research.pku.edu.cn/bdkyjz/" class="art-title" target="_blank">北大 5-6 月科研进展速览：钙钛矿 LED、量子分子科学等多项突破</a>
+        <p class="art-summary">周欢萍/严纯华团队钙钛矿 LED 获重要进展；刘剑教授当选国际量子分子科学院院士。</p>
+        <span class="art-date">6月12日</span><span class="art-source">北京大学</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">3</div>
+      <div class="art-body">
+        <a href="https://research.bjmu.edu.cn/gzdt/c057f184e3f347bcb02800400080a075.htm" class="art-title" target="_blank">北大医学青年科技沙龙第181期：COPE主席谈出版伦理</a>
+        <p class="art-summary">国际出版伦理委员会(COPE)主席与理事到访北大医学部，探讨科研发表中的伦理规范与学术诚信建设。</p>
+        <span class="art-date">6月16日</span><span class="art-source">北大医学科研</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 💻 生信方法 -->
+<section class="group">
+  <h2 class="group-title">💻 生信方法 <span class="count">2 篇</span></h2>
+  <div class="articles">
+
+    <div class="article">
+      <div class="art-num">1</div>
+      <div class="art-body">
+        <a href="https://mp.weixin.qq.com/s?__biz=MzU2NzkxMTE1Mg==&mid=2247561079&idx=4&sn=a8f69cfb53330048fb8c9c77468ab90f" class="art-title" target="_blank">第24周中国团队 CNS 发文统计：15篇顶刊背后的生信方法</a>
+        <p class="art-summary">单细胞组学、空间转录组学、全脑成像数据分析成为本周 CNS 论文的核心技术支撑，彰显生信在顶刊研究中的关键角色。</p>
+        <span class="art-date">6月20日</span><span class="art-source">iNature</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">2</div>
+      <div class="art-body">
+        <a href="https://blog.csdn.net/woodcorpse/article/details/146031756" class="art-title" target="_blank">宏基因组+微生物组分析技术最新资源汇总（2026版）</a>
+        <p class="art-summary">宏基因组公众号更新全套微生物组生物信息学分析资源，涵盖从上游质控到下游可视化的完整流程。</p>
+        <span class="art-date">6月</span><span class="art-source">宏基因组</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🤖 AI前沿 -->
+<section class="group">
+  <h2 class="group-title">🤖 AI 前沿 <span class="count">3 篇</span></h2>
+  <div class="articles">
+
+    <div class="article">
+      <div class="art-num">1</div>
+      <div class="art-body">
+        <a href="http://iaipie.com/2026%E5%B9%B4%E4%B8%8B%E5%8D%8A%E5%B9%B4ai%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83%E5%89%8D%E7%9E%BB/" class="art-title" target="_blank">2026下半年 AI 大模型前瞻：DeepSeek V4.1 完成 500 亿融资</a>
+        <p class="art-summary">Claude Fable 5 被紧急叫停、OpenAI 秘密递交 IPO、DeepSeek 完成创纪录融资——大模型赛道正经历剧变。</p>
+        <span class="art-date">6月18日</span><span class="art-source">DeepSeek</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">2</div>
+      <div class="art-body">
+        <a href="https://zhuanlan.zhihu.com/p/2049775079383360182" class="art-title" target="_blank">6月四大模型权威评测：Claude/GPT 领跑，DeepSeek 场景见长</a>
+        <p class="art-summary">GPT-5.5 编码第一，Claude Opus 4.8 Agent 第一，DeepSeek V4 Pro 在中文场景和成本效率上表现突出。</p>
+        <span class="art-date">6月19日</span><span class="art-source">知乎</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="art-num">3</div>
+      <div class="art-body">
+        <a href="https://caifuhao.eastmoney.com/news/20260615142115438074190" class="art-title" target="_blank">DeepSeek 生态扩展：住建领域行业大模型通过国家备案</a>
+        <p class="art-summary">东华软件基于 DeepSeek-R1 打造的住建领域大模型 DeepCogni 正式通过网信办备案，成为行业 AI 落地新案例。</p>
+        <span class="art-date">6月15日</span><span class="art-source">东方财富</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <div class="footer">
-    <p>🤖 Generated with <a href="https://claude.com/claude-code">Claude Code</a> ·
-    <a href="archive/">往期存档</a></p>
+  <p>🤖 由 Claude Code Digest 自动生成 · <a href="https://research-daily-8u2.pages.dev/">research-daily-8u2.pages.dev</a> · <a href="archive/">往期存档</a></p>
 </div>
+
 </div>
 </body>
 </html>
