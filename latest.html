@@ -6,37 +6,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="theme-color" content="#0a0a0a">
-<title>科研要闻 · 2026.06.22</title>
+<title>科研要闻 · 2026.06.23</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
-:root {
-  --bg: #faf8f5; --card: #ffffff; --text: #1c1c1c; --soft: #5a5a5a;
-  --light: #8a8a8a; --red: #d9464a; --blue: #3b6fb6; --green: #2d8a6e;
-  --purple: #7c3aed; --amber: #d97706; --ink: #0a0a0a; --border: #ebe5db;
-  --tag-bg: #f5f0e8;
-}
-body {
-  font-family: "Inter","PingFang SC","Microsoft YaHei",sans-serif;
-  background: var(--bg); color: var(--text);
-  -webkit-font-smoothing: antialiased; line-height: 1.6;
-}
-.container { max-width: 640px; margin:0 auto; padding:0 20px 50px; }
-.masthead {
-  background: var(--ink); color: #fff;
-  margin:0 -20px; padding:60px 28px 44px; text-align:center;
-  position:relative; overflow:hidden;
-}
-.masthead::before {
-  content:''; position:absolute; top:-80px; right:-60px;
-  width:240px; height:240px;
-  background: radial-gradient(circle, rgba(217,70,74,0.15) 0%, transparent 70%);
-}
-.masthead::after {
-  content:''; position:absolute; bottom:-40px; left:-40px;
-  width:160px; height:160px;
-  background: radial-gradient(circle, rgba(59,111,182,0.08) 0%, transparent 70%);
-}
+:root { --bg:#faf8f5; --card:#fff; --text:#1c1c1c; --soft:#5a5a5a; --light:#8a8a8a; --red:#d9464a; --blue:#3b6fb6; --green:#2d8a6e; --purple:#7c3aed; --amber:#d97706; --ink:#0a0a0a; --border:#ebe5db; --tag-bg:#f5f0e8; }
+body { font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; line-height:1.6; }
+.container { max-width:640px; margin:0 auto; padding:0 20px 50px; }
+.masthead { background:var(--ink); color:#fff; margin:0 -20px; padding:60px 28px 44px; text-align:center; position:relative; overflow:hidden; }
+.masthead::before { content:''; position:absolute; top:-80px; right:-60px; width:240px; height:240px; background:radial-gradient(circle,rgba(217,70,74,0.15) 0%,transparent 70%); }
+.masthead::after { content:''; position:absolute; bottom:-40px; left:-40px; width:160px; height:160px; background:radial-gradient(circle,rgba(59,111,182,0.08) 0%,transparent 70%); }
 .masthead .vol { position:relative; z-index:1; font-size:10px; letter-spacing:6px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:20px; }
 .masthead h1 { position:relative; z-index:1; font-family:"Noto Serif SC",serif; font-size:42px; font-weight:900; letter-spacing:6px; line-height:1.15; }
 .masthead .sub { position:relative; z-index:1; font-size:14px; color:rgba(255,255,255,0.45); margin-top:14px; letter-spacing:3px; }
@@ -55,212 +34,131 @@ body {
 .card:hover { box-shadow:0 2px 16px rgba(0,0,0,0.05); }
 .card-inner { padding:22px 24px; }
 .card-tag { display:inline-block; font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; padding:4px 10px; border-radius:4px; background:var(--tag-bg); color:var(--light); margin-bottom:12px; }
-.card-tag.red { background:#fef2f2; color:var(--red); }
-.card-tag.blue { background:#eff6ff; color:var(--blue); }
-.card-tag.green { background:#ecfdf5; color:var(--green); }
-.card-tag.amber { background:#fffbeb; color:var(--amber); }
-.card-tag.purple { background:#f5f3ff; color:var(--purple); }
+.card-tag.red { background:#fef2f2; color:var(--red); } .card-tag.blue { background:#eff6ff; color:var(--blue); } .card-tag.green { background:#ecfdf5; color:var(--green); } .card-tag.amber { background:#fffbeb; color:var(--amber); } .card-tag.purple { background:#f5f3ff; color:var(--purple); }
 .card h3 { font-family:"Noto Serif SC",serif; font-size:18px; font-weight:700; line-height:1.6; color:var(--ink); margin-bottom:10px; }
 .card p { font-size:14px; color:var(--soft); line-height:1.85; }
 .card p strong { color:var(--text); font-weight:600; }
 .card-meta { padding:12px 24px 16px; display:flex; align-items:center; gap:8px; font-size:11px; color:var(--light); }
 .card-meta .src { font-weight:700; color:var(--text); letter-spacing:1px; }
-.card-meta a { margin-left:auto; color:var(--light); text-decoration:none; font-weight:500; transition:color 0.15s; }
+.card-meta a { margin-left:auto; color:var(--light); text-decoration:none; font-weight:500; }
 .card-meta a:hover { color:var(--red); }
-.card.hero { border-left:3px solid var(--red); }
-.card.hero h3 { font-size:21px; }
+.card.hero { border-left:3px solid var(--red); } .card.hero h3 { font-size:21px; }
 .stats { display:flex; gap:1px; margin:24px -20px 0; }
 .stat { flex:1; text-align:center; padding:20px 8px; background:#fff; }
 .stat .n { font-family:"Inter",sans-serif; font-size:30px; font-weight:900; color:var(--ink); }
 .stat .l { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--light); margin-top:6px; }
 .footer { text-align:center; padding:40px 20px 30px; color:var(--light); font-size:11px; letter-spacing:2px; }
-.footer a { color:var(--soft); text-decoration:none; }
-.footer a:hover { color:var(--red); }
-@media (max-width:480px) {
-  .masthead h1 { font-size:30px; letter-spacing:3px; }
-  .masthead { padding:44px 20px 32px; }
-  .card-inner { padding:18px 16px; }
-  .card h3 { font-size:16px; }
-  .card p { font-size:13px; }
-  .card.hero h3 { font-size:18px; }
-  .date-banner .day { font-size:28px; }
-}
+.footer a { color:var(--soft); text-decoration:none; } .footer a:hover { color:var(--red); }
+@media (max-width:480px) { .masthead h1 { font-size:30px; letter-spacing:3px; } .masthead { padding:44px 20px 32px; } .card-inner { padding:18px 16px; } .card h3 { font-size:16px; } .card.hero h3 { font-size:18px; } }
 </style>
 </head>
 <body>
-
-<div class="masthead">
-  <div class="vol">Daily Research Briefing · Vol. 003</div>
-  <h1>每日科研要闻</h1>
-  <div class="sub">十二个信源 · 五组板块 · 深度解读</div>
-  <div class="rule"></div>
-</div>
-
+<div class="masthead"><div class="vol">Daily Research Briefing · Vol. 004</div><h1>每日科研要闻</h1><div class="sub">十二个信源 · 五组板块 · 深度解读</div><div class="rule"></div></div>
 <div class="container">
 
-<div class="date-banner">
-  <div class="day">22</div>
-  <div class="info"><strong>2026 年 6 月</strong>星期一 · 15 篇文章</div>
+<div class="date-banner"><div class="day">23</div><div class="info"><strong>2026 年 6 月</strong>星期二 · 14 篇文章</div></div>
+<div class="stats"><div class="stat"><div class="n">14</div><div class="l">文章</div></div><div class="stat"><div class="n">5</div><div class="l">板块</div></div><div class="stat"><div class="n">12</div><div class="l">信源</div></div><div class="stat"><div class="n">04</div><div class="l">期号</div></div></div>
+
+<div class="section"><div class="section-label"><span class="dot dot-red"></span><h2>顶刊速递</h2><span class="count">3 篇</span></div>
+
+<div class="card hero"><div class="card-inner">
+<span class="card-tag red">Nature · 抗衰综述</span>
+<h3>Nature 2026 年度抗衰综述：从"能量补给"到"细胞治理"的范式革命</h3>
+<p>顶级科研期刊 Nature 发布的 2026 年度抗衰老研究综述提出了一个让整个行业震动的新概念——<strong>细胞治理（Cellular Governance）</strong>。过去十年，抗衰老研究一直围绕 NAD+ 补充、抗氧化和端粒延长等单一通路展开；但现在科学家意识到，衰老是一个涉及表观遗传重塑、蛋白质稳态崩溃、线粒体质量控制和干细胞微环境退化的多维度系统性问题。这意味着未来的抗衰策略必须从"补什么"转向"怎么管"——系统性调控细胞内部的多个质量节点。综述特别指出，中国团队在肠道菌群代谢物抗衰和单细胞衰老图谱方面的贡献正在改写这个领域的全球格局。</p>
+</div><div class="card-meta"><span class="src">iNature</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1863249254092115268">原文 →</a></div></div>
+
+<div class="card"><div class="card-inner">
+<span class="card-tag blue">Nature Cell Biology</span>
+<h3>NAT10 蛋白：不靠 mRNA 修饰也能维持干细胞稳态</h3>
+<p>长久以来，NAT10 蛋白被认为通过 ac4C（N4-乙酰胞苷）修饰 mRNA 来发挥作用。但 Nature Cell Biology 5 月刊发的一项研究颠覆了这一认知：<strong>NAT10 维持干细胞稳态的关键机制其实是减缓 mRNA 降解速率，而与其 ac4C 催化活性无关</strong>。这一发现不仅重新定义了 NAT10 的功能，也提醒科学界——一个蛋白的"招牌功能"未必是它最重要的功能。</p>
+</div><div class="card-meta"><span class="src">Nature Cell Biology</span> · 5 月 14 日<a href="https://www.nature.com/ncb/articles?type=article">原文 →</a></div></div>
+
+<div class="card"><div class="card-inner">
+<span class="card-tag blue">ERA 2026 · 临床突破</span>
+<h3>IgA 肾病进入"对因时代"：ERA 2026 三项重磅数据改写指南</h3>
+<p>第 63 届欧洲肾脏协会年会公布的三项关键数据将重塑 IgA 肾病治疗格局：KDIGO 2025 指南确立更激进的治疗目标、补体 B 因子抑制剂伊普可泮 III 期最终数据出炉、内皮素 A 受体拮抗剂阿曲生坦 2.5 年长期数据证实持续获益。三箭齐发，<strong>IgA 肾病从"对症延缓"正式迈入"对因干预"时代</strong>——医生和患者终于等到了一个清晰的路线图。</p>
+</div><div class="card-meta"><span class="src">BioArt</span> · 6 月<a href="https://zhuanlan.zhihu.com/p/2052444139229336873">原文 →</a></div></div>
 </div>
 
-<div class="stats">
-  <div class="stat"><div class="n">15</div><div class="l">文章</div></div>
-  <div class="stat"><div class="n">5</div><div class="l">板块</div></div>
-  <div class="stat"><div class="n">12</div><div class="l">信源</div></div>
-  <div class="stat"><div class="n">03</div><div class="l">期号</div></div>
+<div class="section"><div class="section-label"><span class="dot dot-green"></span><h2>前沿产业</h2><span class="count">3 篇</span></div>
+
+<div class="card hero"><div class="card-inner">
+<span class="card-tag green">国产新药 · 里程碑</span>
+<h3>荣昌生物泰它西普：干燥综合症 + IgA 肾病两大适应症同日获批</h3>
+<p>6 月 8 日，荣昌生物自主研发的 BLyS/APRIL 双靶点创新药泰它西普迎来历史性时刻——<strong>干燥综合症和 IgA 肾病两大适应症同日获批上市</strong>。泰它西普通过同时阻断 B 细胞活化因子（BLyS）和增殖诱导配体（APRIL），在自身免疫性疾病领域展现出"平台型药物"的潜力。干燥综合症此前全球无有效治疗药物，而 IgA 肾病则是中国最常见的原发性肾小球肾炎。业内评价："一个国产药，同时填补两个空白。"荣昌生物市值当日涨幅超 8%。</p>
+</div><div class="card-meta"><span class="src">医药魔方</span> · 6 月 9 日<a href="https://www.phirda.com/artilce_42812.html">原文 →</a></div></div>
+
+<div class="card"><div class="card-inner">
+<span class="card-tag green">FDA · 肾病新药</span>
+<h3>全球首个 IgA 肾病 C5 补体抑制剂：阿斯利康 Ultomiris 获 FDA 优先审评</h3>
+<p>6 月 15 日，阿斯利康宣布 FDA 已受理 Ultomiris（ravulizumab）用于治疗 IgA 肾病的补充申请并纳入<strong>优先审评</strong>，目标日期 2026 年第四季度。如获批，这将是全球首个针对 IgA 肾病的 C5 补体抑制剂。与需要每两周输注一次的竞品不同，Ultomiris 的半衰期更长，可每 8 周给药一次，大幅降低患者治疗负担。</p>
+</div><div class="card-meta"><span class="src">罕见病信息网</span> · 6 月 15 日<a href="http://www.raredisease.cn/News/Info/26074">原文 →</a></div></div>
+
+<div class="card"><div class="card-inner">
+<span class="card-tag green">ERA 2026</span>
+<h3>ERA 2026 全景：肾病治疗从"一刀切"走向精准分层</h3>
+<p>今年 ERA 年会的主题词是"精准"。从补体抑制剂到内皮素拮抗剂，从 SGLT2i 到双靶点生物制剂，<strong>肾病治疗正在经历从"所有病人用同一种方案"到"按生物标志物分亚型精准用药"的根本转变</strong>。多位与会专家表示，IgA 肾病可能是第一个实现"对因精准治疗"的慢性肾病类型，其模式将向膜性肾病、FSGS 和狼疮肾炎快速扩散。</p>
+</div><div class="card-meta"><span class="src">生物世界</span> · 6 月<a href="https://zhuanlan.zhihu.com/p/2052444139229336873">原文 →</a></div></div>
 </div>
 
-<div class="section">
-  <div class="section-label"><span class="dot dot-red"></span><h2>顶刊速递</h2><span class="count">4 篇</span></div>
+<div class="section"><div class="section-label"><span class="dot dot-purple"></span><h2>科学人文</h2><span class="count">2 篇</span></div>
 
-  <div class="card hero">
-    <div class="card-inner">
-      <span class="card-tag red">Nature · 结构生物学</span>
-      <h3>颜宁团队 Nature 发文：三种动物毒素如何"操纵"人体钠离子通道</h3>
-      <p>蝎子、芋螺、子弹蚁——这三种动物的毒液为什么能精准攻击神经系统？深圳医学科学院颜宁院士团队在 Nature 发表论文，首次系统解析了蝎毒素 Cn2、芋螺毒素 ɩ-RXIA 和子弹蚁毒素 Pc1a 分别与<strong>人源 Nav1.6 钠离子通道结合的三维结构</strong>。三种毒素展现出截然不同的结合构象和调控机制，这一发现不仅加深了对神经毒素作用原理的理解，更为开发精准靶向 Nav1.6 的新型镇痛药和抗癫痫药物提供了"分子蓝图"。新华社、澎湃新闻均专题报道了这一成果。</p>
-    </div>
-    <div class="card-meta"><span class="src">iNature</span> · 6 月 10 日<a href="https://www.thepaper.cn/newsDetail_forward_33361990">原文 →</a></div>
-  </div>
+<div class="card hero"><div class="card-inner">
+<span class="card-tag red">深度 · 饶毅</span>
+<h3>饶毅山西大学开讲"中国科学何处去"：500 名师生的科学精神洗礼</h3>
+<p>6 月 15 日，北京大学终身讲席教授饶毅到访山西大学，面向 500 余名师生发表题为"中国科学何处去"的专题演讲。从学术道德失范到评价体系异化，从帽子文化的积弊到青年科研人员生存困境，饶毅的发言一如既往地不留情面。但他同时强调：<strong>"批评不是为了否定，而是为了让中国科学变得更好。"</strong>讲座由山西大学党委副书记主持，表明体制内正在以开放的态度直面这些讨论。</p>
+</div><div class="card-meta"><span class="src">知识分子</span> · 6 月 15 日<a href="https://mp.weixin.qq.com/s?__biz=MzA4MDYyMDMzMg==&mid=2650805425&idx=1">原文 →</a></div></div>
 
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag blue">Cell · 合成生物学</span>
-      <h3>张锋团队从 180 万种组合中捞出转录因子的"黄金配对"</h3>
-      <p>博德研究所张锋院士团队在 Cell 发表 2026 年首篇重磅论文。他们构建了包含 3500 多个转录因子剪接变异体的超大文库，通过高通量筛选从<strong>超过 180 万种组合</strong>中鉴定出能够精准调控细胞命运的关键转录因子配对。这项工作为人工操控细胞分化、重编程以及再生医学提供了系统性的"工具书"——过去试一个基因要数月，现在可以在一周内找到最优组合。张锋论文总引用已超 14 万次，这项新成果被认为可能开启"转录因子工程"新领域。</p>
-    </div>
-    <div class="card-meta"><span class="src">生物世界</span> · 6 月<a href="https://mp.weixin.qq.com/s?__biz=MzUxMzk5MjY5NA==&mid=2247660459&idx=1&sn=bb7167c5213626ae0026aeb519e0e540">原文 →</a></div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag blue">Cell · 衰老图谱</span>
-      <h3>首个人类衰老细胞全面图谱发布：衰老远比我们想象的复杂</h3>
-      <p>Cell 发表的一项里程碑研究首次构建了<strong>人类衰老细胞的全面图谱</strong>。研究发现不同组织中的细胞衰老方式差异巨大，存在多种此前未知的衰老表型亚型。这意味着"抗衰老"不能一刀切——未来的抗衰策略必须考虑组织特异性和细胞异质性。该研究为精准诊断衰老程度和开发靶向抗衰疗法奠定了系统生物学基础。</p>
-    </div>
-    <div class="card-meta"><span class="src">iNature</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1867949293634952774">原文 →</a></div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag blue">Molecular Cell</span>
-      <h3>皮肤为何变老？苏黎世大学发现翻译调控失调是罪魁祸首</h3>
-      <p>苏黎世大学团队开发了一种名为"<strong>体内单细胞核糖体分析</strong>"的全新技术，首次在活体皮肤中实时观测蛋白质翻译过程。他们发现老年皮肤干细胞中的翻译调控严重失调——某些关键蛋白的合成速率下降了 40% 以上，而一些促炎蛋白反而过度合成。这项发表在 Molecular Cell 上的研究不仅揭示了皮肤衰老的新机制，其开发的单细胞翻译组学技术本身也是一个重要的方法学贡献。</p>
-    </div>
-    <div class="card-meta"><span class="src">BioArt</span> · 5 月 22 日<a href="https://baijiahao.baidu.com/s?id=1867949293634952774">原文 →</a></div>
-  </div>
+<div class="card"><div class="card-inner">
+<span class="card-tag purple">机构动态</span>
+<h3>北京大学饶毅实验室研究方向全览：神经递质、睡眠与 GPCR</h3>
+<p>北大前沿交叉学科研究院近日更新了饶毅实验室的研究方向介绍。实验室采用生物化学分离、遗传筛选等手段，<strong>系统寻找新的神经递质分子和调控睡眠的关键基因</strong>。其中 GPCR（G 蛋白偶联受体）是核心关注点——这类受体是最常见的药物靶点分子家族。饶毅在北大和复旦双线布局的阿尔茨海默症研究也与这些基础方向紧密关联。</p>
+</div><div class="card-meta"><span class="src">北京大学</span> · 6 月<a href="http://www.aais.pku.edu.cn/info/1402/2618.htm">原文 →</a></div></div>
 </div>
 
-<div class="section">
-  <div class="section-label"><span class="dot dot-green"></span><h2>前沿产业</h2><span class="count">3 篇</span></div>
+<div class="section"><div class="section-label"><span class="dot dot-blue"></span><h2>生信方法</h2><span class="count">3 篇</span></div>
 
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag green">基因治疗</span>
-      <h3>饶毅：中国基因治疗可降价 97%，提议血友病疗法入医保</h3>
-      <p>在 6 月天津血友病国际交流与发展大会上，饶毅教授抛出一项震撼业界的主张：<strong>中国基因治疗产品在质量与安全性提升的前提下，价格可降低 97%</strong>。他同时提出了一个创新性的医保支付方案——"逐年递减 + 效果绑定"：医保每年支付的费用递减，药企必须用持续疗效来换取后续付款，疗效不佳即停付。这一方案若落地，将彻底改变天价基因疗法"用不起"的困局。目前中国有约 13 万血友病患者，基因治疗可能让他们从"终生输注"的负担中解脱。</p>
-    </div>
-    <div class="card-meta"><span class="src">知识分子</span> · 6 月<a href="https://m.toutiao.com/article/7651469751339844132/">原文 →</a></div>
-  </div>
+<div class="card"><div class="card-inner">
+<span class="card-tag blue">前沿会议</span>
+<h3>第二届西部单细胞与空间组学论坛 6 月 25-26 日召开</h3>
+<p>单细胞与空间组学技术已成为从群体平均跨越到单细胞分辨率的核心驱动力。即将在成都召开的<strong>第二届西部单细胞与空间组学论坛</strong>将聚焦肿瘤微环境解析、免疫治疗响应预测、神经疾病单细胞图谱和药物筛选等方向。多个团队将展示 AI 驱动的单细胞数据自动注释和伪时序分析的最新进展。</p>
+</div><div class="card-meta"><span class="src">单细胞天地</span> · 6 月 25-26 日<a href="https://mp.weixin.qq.com/s?__biz=MzAxNzMzNjMxMw==&mid=2247553021&idx=2">原文 →</a></div></div>
 
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag green">疫苗技术</span>
-      <h3>Science 突破：鼻内接种即可建立广谱呼吸道免疫"万能训练营"</h3>
-      <p>传统疫苗每次只能针对一种病原体，而 Science 最新研究提出了一种全新范式：通过鼻内接种特定的免疫训练制剂，可以在肺部建立一个<strong>"万能训练营"</strong>——训练呼吸道黏膜免疫系统同时识别和应对多种病毒和细菌。在小鼠模型中，单次鼻内接种就提供了对流感、RSV 和肺炎链球菌的广谱保护。这项技术若成功转化，将从根本上改变呼吸道传染病的防控策略。</p>
-    </div>
-    <div class="card-meta"><span class="src">生物谷</span> · 5 月<a href="https://news.bioon.com/vaccines/researc-1.html">原文 →</a></div>
-  </div>
+<div class="card"><div class="card-inner">
+<span class="card-tag blue">AI + 生信</span>
+<h3>2026 年 AI+ 生物信息学技术全景盘点</h3>
+<p>从 Parse Biosciences 的 AI 降噪算法到 Singleron 的云端单细胞分析平台，从 Helixon 的蛋白质结构预测到 AI 驱动的空间转录组数据解码——<strong>AI 正在从"辅助工具"升级为生物信息学核心基础设施</strong>。最值得关注的趋势是"端到端 SaaS 化"：用户上传原始数据，云端自动完成质控、聚类、注释和可视化全流程，大幅降低了单细胞分析的技术门槛。</p>
+</div><div class="card-meta"><span class="src">生信技能树</span> · 6 月<a href="https://blog.csdn.net/yangl7/article/details/149022712">原文 →</a></div></div>
 
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag green">产业趋势</span>
-      <h3>mRNA 疫苗平台面临"证据升级"：从免疫原性叙事到真实世界价值</h3>
-      <p>mRNA 疫苗在新冠期间证明了自己，但监管机构和支付方正在提高门槛。最新行业分析指出，mRNA 平台在流感和肿瘤疫苗上继续展现工程能力，但<strong>监管方不再满足于免疫学指标的"叙事"</strong>——它们要求 mRNA 疫苗拿出更接近真实临床结局的证据，并在大规模生产的三重约束下依然成立。这是 mRNA 行业从"概念验证"迈向"常规产品"必须跨过的一道坎。</p>
-    </div>
-    <div class="card-meta"><span class="src">生物谷</span> · 6 月 15 日<a href="https://www.bilibili.com/opus/1215614034142822417">原文 →</a></div>
-  </div>
+<div class="card"><div class="card-inner">
+<span class="card-tag blue">工具方法</span>
+<h3>单细胞 + 空间组学数据分析的"干湿闭环"最佳实践</h3>
+<p>随着 10x Genomics、华大 Stereo-seq 和 Parse Biosciences 等平台的数据产出量持续增长，生信分析正在经历从"写脚本"到"搭管线"的转型。<strong>核心挑战不再是能不能跑通流程，而是如何确保分析结果在生物学上可重复、可验证。</strong>最新最佳实践强调三点：原始数据透明化、分析步骤容器化（Docker/Singularity）、验证环节必须回归湿实验——"干湿闭环"正在从顶刊论文的标配变成整个领域的质量底线。</p>
+</div><div class="card-meta"><span class="src">生信技能树</span> · 6 月<a href="https://space.bilibili.com/338686099/">原文 →</a></div></div>
 </div>
 
-<div class="section">
-  <div class="section-label"><span class="dot dot-purple"></span><h2>科学人文</h2><span class="count">2 篇</span></div>
+<div class="section"><div class="section-label"><span class="dot dot-amber"></span><h2>AI 前沿</h2><span class="count">3 篇</span></div>
 
-  <div class="card hero">
-    <div class="card-inner">
-      <span class="card-tag red">深度 · 科研体制</span>
-      <h3>63 岁饶毅不评院士，却在北大复旦双线布局阿尔茨海默症研究</h3>
-      <p>在北京昌平生命科学园和上海医学院，饶毅的两个课题组正在同步攻关阿尔茨海默症的不同科学问题。这位从不参与院士评选的 63 岁科学家，选择了一条与传统学术晋升完全不同的路径：<strong>不做头衔的奴隶，只做科学问题的追逐者</strong>。与此同时，他仍在公开场合持续发声——从血友病基因治疗定价到中国科学体制改革，饶毅正成为当代中国科学界最具公共影响力的声音之一。</p>
-    </div>
-    <div class="card-meta"><span class="src">知识分子</span> · 2026 年<a href="https://baijiahao.baidu.com/s?id=1857063585663384967">原文 →</a></div>
-  </div>
+<div class="card hero"><div class="card-inner">
+<span class="card-tag red">商业化 · 拐点</span>
+<h3>Anthropic ARR 飙至 470 亿美元：AI 商业化进入指数增长期</h3>
+<p>2026 年 6 月，AI 大模型行业的商业化正在经历历史性拐点。Anthropic 年化经常性收入（ARR）从年初的 200 亿美元飙升至<strong>470 亿美元，年增长率达 230%</strong>；OpenAI ChatGPT 月活突破 200 亿，企业 ARR 达 320 亿美元；DeepSeek 完成 500 亿元人民币融资，估值 450 亿美元。三巨头在商业模式上明显分化：Anthropic 押注企业级安全与合规，OpenAI 追求规模效应和消费级渗透，DeepSeek 走开源+性价比路线。整个行业正从"技术竞赛"进入"商业兑现"阶段。</p>
+</div><div class="card-meta"><span class="src">CSDN</span> · 6 月<a href="https://adg.csdn.net/6a309c6f10ee7a33f27da8ed.html">原文 →</a></div></div>
 
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag purple">学术动态</span>
-      <h3>清华 2026 年已发 8 篇 CNS，北大两天 6 篇——中国基础科学势头不减</h3>
-      <p>截至 2026 年 1 月底，清华大学作为第一单位已在 Nature/Science/Cell 发表 8 篇论文；北京大学更曾在两天内连发 6 篇 CNS。这个速度即便在全球顶尖高校中也属罕见。<strong>中国高校在基础研究领域的产出密度正在逼近历史最高水平。</strong>背后是过去十年的人才引进、平台建设和科研投入的集中回报。</p>
-    </div>
-    <div class="card-meta"><span class="src">北京大学</span> · 2026 年<a href="https://baijiahao.baidu.com/s?id=1856145846640912163">原文 →</a></div>
-  </div>
+<div class="card"><div class="card-inner">
+<span class="card-tag amber">国际治理</span>
+<h3>韩国成为全球第四个与 OpenAI 建立 AI 安全合作的国家</h3>
+<p>韩国科学技术信息通信部宣布与 OpenAI 正式建立战略合作伙伴关系，成为继美、英、日后<strong>全球第四个与 OpenAI 形成 AI 安全合作的国家</strong>。韩国 AI 安全研究所将与 OpenAI 共同开发兼具国际通用性与韩国本地化的评估体系，特别是在韩语大模型的偏见检测和社会情境安全评估方面。这标志着 AI 安全治理正在从"美国中心"向多极格局演变。</p>
+</div><div class="card-meta"><span class="src">GitHub</span> · 6 月 21 日<a href="https://github.com/xushankun/blog/blob/master/content/posts/ai-daily-2026-06-21.md">原文 →</a></div></div>
+
+<div class="card"><div class="card-inner">
+<span class="card-tag amber">模型格局</span>
+<h3>6 月 AI 模型格局：Fable 5 称王，国产三雄崛起，两周迭代一次成新常态</h3>
+<p>2026 年 6 月的 AI 模型竞争烈度前所未有：Anthropic 推出 Claude Fable 5、谷歌发布 DiffusionGemma、月之暗面升级 Kimi K2.7 Code、智谱带来 GLM-5.2——<strong>平均每 3-4 天就有一次重要模型更新</strong>。排行榜的更新速度已经跟不上模型迭代的节奏。行业观察者指出，"模型即产品"的时代正在被"模型即基础设施"取代——真正的胜负手将从模型能力本身转向生态、分发和商业化落地。</p>
+</div><div class="card-meta"><span class="src">百家号</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1868245685909352050">原文 →</a></div></div>
 </div>
 
-<div class="section">
-  <div class="section-label"><span class="dot dot-blue"></span><h2>生信方法</h2><span class="count">2 篇</span></div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag blue">新技术</span>
-      <h3>"体内单细胞核糖体分析"：在活体组织里实时看翻译</h3>
-      <p>苏黎世大学团队的这项技术突破允许科学家<strong>在活体动物组织中，以单细胞分辨率实时观测蛋白质翻译过程</strong>。传统核糖体分析只能做 bulk 水平，而新方法结合了单细胞分选和核糖体足迹测序，首次揭示了同一组织中不同细胞的翻译活动差异。这对理解衰老、癌症和发育中的翻译调控具有里程碑意义。生信分析流程的关键在于如何处理稀疏的单细胞翻译组数据——这是一个全新的计算挑战。</p>
-    </div>
-    <div class="card-meta"><span class="src">BioArt</span> · 5 月<a href="https://baijiahao.baidu.com/s?id=1867949293634952774">原文 →</a></div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag blue">AI + 科研</span>
-      <h3>180 万次实验的计算筛选：张锋团队背后的生物信息学支撑</h3>
-      <p>张锋团队从 180 万种转录因子组合中筛选关键配对的背后，是一套精密的数据分析管线：<strong>单细胞多组学整合 + 高通量筛选计算 + 机器学习预测模型</strong>。这套管线将"大海捞针"式的湿实验筛选变成了"先算后验"的智能流程，代表了生信驱动实验设计的最新范式。</p>
-    </div>
-    <div class="card-meta"><span class="src">生物世界</span> · 6 月<a href="https://mp.weixin.qq.com/s?__biz=MzUxMzk5MjY5NA==&mid=2247660459&idx=1">原文 →</a></div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-label"><span class="dot dot-amber"></span><h2>AI 前沿</h2><span class="count">3 篇</span></div>
-
-  <div class="card hero">
-    <div class="card-inner">
-      <span class="card-tag red">🔥 今日重磅 · 具身智能</span>
-      <h3>NVIDIA ENPIRE 发布：8 个 AI Agent + 8 台机械臂 = 全球首个自主科研实验室</h3>
-      <p>6 月 22 日——就在今天——英伟达 GEAR 实验室发布 ENPIRE 系统，震动整个 AI 与机器人学界。Jim Fan 团队的这项成果首次实现了<strong>AI 智能体在物理世界的全自主科研闭环</strong>：8 个 Coding Agent 与 8 台机械臂组成一支"自动科研团队"，无需人类干预即可独立完成环境重置、文献检索、代码编写、模型训练与真实场景验证的完整循环。在 Push-T 推积木、4mm 孔径插针、GPU 显卡插入主板等高精度任务中，成功率均达 99%。这意味着 AI 不仅能写论文、编代码——它现在能自己动手做实验了。</p>
-    </div>
-    <div class="card-meta"><span class="src">NVIDIA GEAR</span> · 6 月 22 日<a href="https://www.zhihu.com/pin/2052349952542692285">原文 →</a></div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag amber">产业动态</span>
-      <h3>DeepSeek V4 系列 API 永久降价 75%：大模型价格战进入深水区</h3>
-      <p>5 月 22 日，DeepSeek 没有发布会、没有通稿，静悄悄更新了一则公告：<strong>全系 API 输入价格永久降价，旗舰模型 DeepSeek-V4 系列限时叠加优惠后相当于降价 75%</strong>。与 OpenAI 和 Claude 同档位模型相比，DeepSeek 的 Token 价格已降至竞品的百分之一以下。在中国 AI 产业全力冲刺应用的 2026 年，DeepSeek 用极致性价比策略正在改写行业竞争规则——"白菜价"的顶级模型将如何重塑应用生态，值得密切关注。</p>
-    </div>
-    <div class="card-meta"><span class="src">DeepSeek</span> · 5 月 22 日<a href="https://baijiahao.baidu.com/s?id=1868312856164769612">原文 →</a></div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <span class="card-tag amber">机器人</span>
-      <h3>优必选人形机器人预售破 5000 台：消费级具身智能时代来临</h3>
-      <p>优必选旗下消费级人形机器人品牌"优世界"自 6 月 2 日开启预售以来，累计预订单量已突破 5000 台，成为<strong>国内首款实现大规模线上预售的真人等身仿生陪伴机器人</strong>。从实验室到客厅，人形机器人的商业化正在以前所未有的速度推进。结合 NVIDIA ENPIRE 在科研端的突破，2026 年 6 月可能被记为"具身智能元年"的起点。</p>
-    </div>
-    <div class="card-meta"><span class="src">CSDN</span> · 6 月 22 日<a href="https://blog.csdn.net/nndsb/article/details/162191427">原文 →</a></div>
-  </div>
-</div>
-
-<div class="footer">
-  <p>每日 7:57 AM 自动更新 · <a href="archive/">往期存档</a></p>
-  <p style="margin-top:4px">由 Claude Code 生成 · 12 个优质信源 · 深度解读每篇文章</p>
-</div>
-
+<div class="footer"><p>每日 7:57 AM 自动更新 · <a href="archive/">往期存档</a></p><p style="margin-top:4px">由 Claude Code 生成 · 12 个优质信源 · 深度解读每篇文章</p></div>
 </div>
 </body>
 </html>
