@@ -6,11 +6,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="theme-color" content="#0a0a0a">
-<title>科研要闻 · 2026.06.23</title>
+<title>科研要闻 · 2026.06.25</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
-:root { --bg:#faf8f5; --card:#fff; --text:#1c1c1c; --soft:#5a5a5a; --light:#8a8a8a; --red:#d9464a; --blue:#3b6fb6; --green:#2d8a6e; --purple:#7c3aed; --amber:#d97706; --ink:#0a0a0a; --border:#ebe5db; --tag-bg:#f5f0e8; }
+:root { --bg:#faf8f5; --card:#fff; --text:#1c1c1c; --soft:#5a5a5a; --light:#8a8a8a; --red:#d9464a; --blue:#3b6fb6; --green:#2d8a6e; --purple:#7c3aed; --amber:#d97706; --ink:#0a0a0a; --border:#ebe5db; }
 body { font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; line-height:1.6; }
 .container { max-width:640px; margin:0 auto; padding:0 20px 50px; }
 .masthead { background:var(--ink); color:#fff; margin:0 -20px; padding:60px 28px 44px; text-align:center; position:relative; overflow:hidden; }
@@ -22,18 +22,16 @@ body { font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif; backgroun
 .masthead .rule { position:relative; z-index:1; width:48px; height:2px; background:var(--red); margin:20px auto 0; }
 .date-banner { display:flex; align-items:center; gap:16px; padding:20px 0; margin:0 -20px; background:#fff; border-bottom:1px solid var(--border); }
 .date-banner .day { font-family:"Inter",sans-serif; font-size:36px; font-weight:800; color:var(--red); padding-left:28px; line-height:1; }
-.date-banner .info { font-size:13px; color:var(--soft); }
-.date-banner .info strong { color:var(--text); display:block; font-size:15px; }
+.date-banner .info { font-size:13px; color:var(--soft); } .date-banner .info strong { color:var(--text); display:block; font-size:15px; }
 .section { margin-top:36px; }
 .section-label { display:flex; align-items:center; gap:10px; margin-bottom:16px; }
 .section-label .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
 .section-label h2 { font-family:"Inter",sans-serif; font-size:11px; font-weight:700; letter-spacing:5px; text-transform:uppercase; color:var(--soft); }
 .section-label .count { font-size:10px; color:var(--light); margin-left:auto; }
 .dot-red { background:var(--red); } .dot-blue { background:var(--blue); } .dot-green { background:var(--green); } .dot-purple { background:var(--purple); } .dot-amber { background:var(--amber); }
-.card { background:var(--card); border-radius:10px; margin-bottom:10px; overflow:hidden; border:1px solid var(--border); transition:box-shadow 0.2s; }
-.card:hover { box-shadow:0 2px 16px rgba(0,0,0,0.05); }
+.card { background:var(--card); border-radius:10px; margin-bottom:10px; overflow:hidden; border:1px solid var(--border); }
 .card-inner { padding:22px 24px; }
-.card-tag { display:inline-block; font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; padding:4px 10px; border-radius:4px; background:var(--tag-bg); color:var(--light); margin-bottom:12px; }
+.card-tag { display:inline-block; font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; padding:4px 10px; border-radius:4px; background:#f5f0e8; color:var(--light); margin-bottom:12px; }
 .card-tag.red { background:#fef2f2; color:var(--red); } .card-tag.blue { background:#eff6ff; color:var(--blue); } .card-tag.green { background:#ecfdf5; color:var(--green); } .card-tag.amber { background:#fffbeb; color:var(--amber); } .card-tag.purple { background:#f5f3ff; color:var(--purple); }
 .card h3 { font-family:"Noto Serif SC",serif; font-size:18px; font-weight:700; line-height:1.6; color:var(--ink); margin-bottom:10px; }
 .card p { font-size:14px; color:var(--soft); line-height:1.85; }
@@ -43,119 +41,110 @@ body { font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif; backgroun
 .card-meta a { margin-left:auto; color:var(--light); text-decoration:none; font-weight:500; }
 .card-meta a:hover { color:var(--red); }
 .card.hero { border-left:3px solid var(--red); } .card.hero h3 { font-size:21px; }
-.stats { display:flex; gap:1px; margin:24px -20px 0; }
-.stat { flex:1; text-align:center; padding:20px 8px; background:#fff; }
-.stat .n { font-family:"Inter",sans-serif; font-size:30px; font-weight:900; color:var(--ink); }
-.stat .l { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--light); margin-top:6px; }
-.footer { text-align:center; padding:40px 20px 30px; color:var(--light); font-size:11px; letter-spacing:2px; }
-.footer a { color:var(--soft); text-decoration:none; } .footer a:hover { color:var(--red); }
+.stats { display:flex; gap:1px; margin:24px -20px 0; } .stat { flex:1; text-align:center; padding:20px 8px; background:#fff; }
+.stat .n { font-family:"Inter",sans-serif; font-size:30px; font-weight:900; color:var(--ink); } .stat .l { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--light); margin-top:6px; }
+.footer { text-align:center; padding:40px 20px 30px; color:var(--light); font-size:11px; letter-spacing:2px; } .footer a { color:var(--soft); text-decoration:none; } .footer a:hover { color:var(--red); }
 @media (max-width:480px) { .masthead h1 { font-size:30px; letter-spacing:3px; } .masthead { padding:44px 20px 32px; } .card-inner { padding:18px 16px; } .card h3 { font-size:16px; } .card.hero h3 { font-size:18px; } }
 </style>
 </head>
 <body>
-<div class="masthead"><div class="vol">Daily Research Briefing · Vol. 004</div><h1>每日科研要闻</h1><div class="sub">十二个信源 · 五组板块 · 深度解读</div><div class="rule"></div></div>
+<div class="masthead"><div class="vol">Daily Research Briefing · Vol. 005</div><h1>每日科研要闻</h1><div class="sub">十二个信源 · 五组板块 · 深度解读</div><div class="rule"></div></div>
 <div class="container">
 
-<div class="date-banner"><div class="day">23</div><div class="info"><strong>2026 年 6 月</strong>星期二 · 14 篇文章</div></div>
-<div class="stats"><div class="stat"><div class="n">14</div><div class="l">文章</div></div><div class="stat"><div class="n">5</div><div class="l">板块</div></div><div class="stat"><div class="n">12</div><div class="l">信源</div></div><div class="stat"><div class="n">04</div><div class="l">期号</div></div></div>
+<div class="date-banner"><div class="day">25</div><div class="info"><strong>2026 年 6 月</strong>星期四 · 13 篇文章</div></div>
+<div class="stats"><div class="stat"><div class="n">13</div><div class="l">文章</div></div><div class="stat"><div class="n">5</div><div class="l">板块</div></div><div class="stat"><div class="n">12</div><div class="l">信源</div></div><div class="stat"><div class="n">05</div><div class="l">期号</div></div></div>
 
 <div class="section"><div class="section-label"><span class="dot dot-red"></span><h2>顶刊速递</h2><span class="count">3 篇</span></div>
 
 <div class="card hero"><div class="card-inner">
-<span class="card-tag red">Nature · 抗衰综述</span>
-<h3>Nature 2026 年度抗衰综述：从"能量补给"到"细胞治理"的范式革命</h3>
-<p>顶级科研期刊 Nature 发布的 2026 年度抗衰老研究综述提出了一个让整个行业震动的新概念——<strong>细胞治理（Cellular Governance）</strong>。过去十年，抗衰老研究一直围绕 NAD+ 补充、抗氧化和端粒延长等单一通路展开；但现在科学家意识到，衰老是一个涉及表观遗传重塑、蛋白质稳态崩溃、线粒体质量控制和干细胞微环境退化的多维度系统性问题。这意味着未来的抗衰策略必须从"补什么"转向"怎么管"——系统性调控细胞内部的多个质量节点。综述特别指出，中国团队在肠道菌群代谢物抗衰和单细胞衰老图谱方面的贡献正在改写这个领域的全球格局。</p>
-</div><div class="card-meta"><span class="src">iNature</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1863249254092115268">原文 →</a></div></div>
+<span class="card-tag red">Science · First Release</span>
+<h3>华科武大联手登 Science：发现 DNA 合成竟能"唤醒"RNA 切割酶</h3>
+<p>5 月 22 日，Science 以"First Release"形式加速发表了华中科技大学朱斌团队与武汉大学王隆飞团队的一项合作成果。他们发现了一种全新的酶学机制：<strong>DNA 聚合反应可以激活逆转录样抗病毒酶执行 RNA 切割功能</strong>。这篇题为"DNA Polymerization Activates RNA Cleavage of an RT-like Antiviral Enzyme"的论文，揭示了一个过去完全未知的生化调控回路——DNA 合成不仅是遗传信息的复制过程，还可以作为信号"开关"来控制 RNA 的命运。值得注意的是，<strong>论文全体作者均使用中文署名</strong>——华科博士生荣雪君、武大博士生肖军等为共同第一作者，这在中国学者发表 Science 的历史上并不多见。</p>
+</div><div class="card-meta"><span class="src">iNature</span> · 5 月 22 日<a href="https://mp.weixin.qq.com/s?__biz=MzA5Nzk2MDc5NA==&mid=2653974803&idx=1">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag blue">Nature Cell Biology</span>
-<h3>NAT10 蛋白：不靠 mRNA 修饰也能维持干细胞稳态</h3>
-<p>长久以来，NAT10 蛋白被认为通过 ac4C（N4-乙酰胞苷）修饰 mRNA 来发挥作用。但 Nature Cell Biology 5 月刊发的一项研究颠覆了这一认知：<strong>NAT10 维持干细胞稳态的关键机制其实是减缓 mRNA 降解速率，而与其 ac4C 催化活性无关</strong>。这一发现不仅重新定义了 NAT10 的功能，也提醒科学界——一个蛋白的"招牌功能"未必是它最重要的功能。</p>
-</div><div class="card-meta"><span class="src">Nature Cell Biology</span> · 5 月 14 日<a href="https://www.nature.com/ncb/articles?type=article">原文 →</a></div></div>
+<span class="card-tag blue">Nature · 前沿综述</span>
+<h3>利用阻变存储器实现高效精确的神经场重建</h3>
+<p>Nature 最新前沿论文推介中，一项利用<strong>阻变存储器（RRAM）进行神经场计算</strong>的研究引发关注。该工作通过新型存算一体架构，实现了神经网络推理能效的数个数量级提升，为边缘 AI 芯片和脑机接口等低功耗场景提供了全新的硬件范式。与传统 GPU 相比，RRAM 基神经场重建在能效比上展现出压倒性优势。</p>
+</div><div class="card-meta"><span class="src">Nature</span> · 6 月<a href="https://mp.weixin.qq.com/s?__biz=MzA3NTQ0OTUwMQ==&mid=2650798621&idx=1">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag blue">ERA 2026 · 临床突破</span>
-<h3>IgA 肾病进入"对因时代"：ERA 2026 三项重磅数据改写指南</h3>
-<p>第 63 届欧洲肾脏协会年会公布的三项关键数据将重塑 IgA 肾病治疗格局：KDIGO 2025 指南确立更激进的治疗目标、补体 B 因子抑制剂伊普可泮 III 期最终数据出炉、内皮素 A 受体拮抗剂阿曲生坦 2.5 年长期数据证实持续获益。三箭齐发，<strong>IgA 肾病从"对症延缓"正式迈入"对因干预"时代</strong>——医生和患者终于等到了一个清晰的路线图。</p>
-</div><div class="card-meta"><span class="src">BioArt</span> · 6 月<a href="https://zhuanlan.zhihu.com/p/2052444139229336873">原文 →</a></div></div>
+<span class="card-tag blue">Nature Biotechnology</span>
+<h3>全球生物技术制药行业人事震荡：2026 上半年高管变动图谱</h3>
+<p>Nature Biotechnology 发布 2026 年上半年生物技术和制药行业重要人事变动汇总。从大型药企研发负责人到 AI 制药初创的 CTO 更迭，<strong>人才流动密集程度为近五年最高</strong>。一个显著趋势是：传统药企高管大规模流向 AI+ 生物技术公司，而 Big Pharma 则从学术界和监管机构引进人才填补空缺。</p>
+</div><div class="card-meta"><span class="src">Nature Biotechnology</span> · 2026<a href="https://www.nature.com/nbt/articles?type=people">原文 →</a></div></div>
 </div>
 
 <div class="section"><div class="section-label"><span class="dot dot-green"></span><h2>前沿产业</h2><span class="count">3 篇</span></div>
 
 <div class="card hero"><div class="card-inner">
-<span class="card-tag green">国产新药 · 里程碑</span>
-<h3>荣昌生物泰它西普：干燥综合症 + IgA 肾病两大适应症同日获批</h3>
-<p>6 月 8 日，荣昌生物自主研发的 BLyS/APRIL 双靶点创新药泰它西普迎来历史性时刻——<strong>干燥综合症和 IgA 肾病两大适应症同日获批上市</strong>。泰它西普通过同时阻断 B 细胞活化因子（BLyS）和增殖诱导配体（APRIL），在自身免疫性疾病领域展现出"平台型药物"的潜力。干燥综合症此前全球无有效治疗药物，而 IgA 肾病则是中国最常见的原发性肾小球肾炎。业内评价："一个国产药，同时填补两个空白。"荣昌生物市值当日涨幅超 8%。</p>
-</div><div class="card-meta"><span class="src">医药魔方</span> · 6 月 9 日<a href="https://www.phirda.com/artilce_42812.html">原文 →</a></div></div>
+<span class="card-tag green">中国创新药 · 里程碑</span>
+<h3>2025 年 76 款创新药获批创历史新高，中国医药产业进入"放量期"</h3>
+<p>2025 年中国全年共有 76 款创新药获批上市，创下历史最高纪录。其中化药 47 款、生物制品 23 款、中药 6 款。<strong>抗肿瘤药仍是绝对主力，但自身免疫、代谢和罕见病领域的占比正在快速攀升。</strong>神经系统药物数量下降，反映出该领域研发难度的持续挑战。从 2020 年的不到 20 款到 2025 年的 76 款，中国创新药产业正在经历从"零星突破"到"系统性放量"的关键转变。这一数据的背后是过去十年在基础研究、临床转化和监管改革三方面的持续投入。</p>
+</div><div class="card-meta"><span class="src">医药魔方</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1868212013395775969">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag green">FDA · 肾病新药</span>
-<h3>全球首个 IgA 肾病 C5 补体抑制剂：阿斯利康 Ultomiris 获 FDA 优先审评</h3>
-<p>6 月 15 日，阿斯利康宣布 FDA 已受理 Ultomiris（ravulizumab）用于治疗 IgA 肾病的补充申请并纳入<strong>优先审评</strong>，目标日期 2026 年第四季度。如获批，这将是全球首个针对 IgA 肾病的 C5 补体抑制剂。与需要每两周输注一次的竞品不同，Ultomiris 的半衰期更长，可每 8 周给药一次，大幅降低患者治疗负担。</p>
-</div><div class="card-meta"><span class="src">罕见病信息网</span> · 6 月 15 日<a href="http://www.raredisease.cn/News/Info/26074">原文 →</a></div></div>
+<span class="card-tag green">罕见病 · 政策拐点</span>
+<h3>全球首创凝血因子 X 激活剂获批：2026 或成罕见病产业分水岭</h3>
+<p>6 月 4 日，我国自主研发的全球首创凝血因子 X 激活剂——生物药 1 类新药"注射用波米泰酶α"获 NMPA 附条件批准上市，用于治疗罕见病伴抑制物的血友病 A 或 B 成人患者出血按需治疗。这是<strong>中国罕见病药物从"跟随"到"首创"的标志性事件</strong>。同时，2026 年国家医保药品目录调整首次将罕见病用药列为优先通道，审批快、独占期长——资本市场已将罕见病视为医药产业的下一个黄金赛道。</p>
+</div><div class="card-meta"><span class="src">生物谷</span> · 6 月 10 日<a href="https://baijiahao.baidu.com/s?id=1868693165914042005">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag green">ERA 2026</span>
-<h3>ERA 2026 全景：肾病治疗从"一刀切"走向精准分层</h3>
-<p>今年 ERA 年会的主题词是"精准"。从补体抑制剂到内皮素拮抗剂，从 SGLT2i 到双靶点生物制剂，<strong>肾病治疗正在经历从"所有病人用同一种方案"到"按生物标志物分亚型精准用药"的根本转变</strong>。多位与会专家表示，IgA 肾病可能是第一个实现"对因精准治疗"的慢性肾病类型，其模式将向膜性肾病、FSGS 和狼疮肾炎快速扩散。</p>
-</div><div class="card-meta"><span class="src">生物世界</span> · 6 月<a href="https://zhuanlan.zhihu.com/p/2052444139229336873">原文 →</a></div></div>
+<span class="card-tag green">资本动态</span>
+<h3>DeepSeek 估值 550 亿美元：国家大基金领投，中国 AI 史上最大单轮融资</h3>
+<p>2026 年 5 月 28 日，DeepSeek 获国家大基金领投的新一轮融资，<strong>估值达 550 亿美元，成为中国 AI 大模型历史上单轮融资规模最大的企业</strong>。这笔融资不仅是对 DeepSeek 技术路线的认可，更标志着国家资本在 AI 基础设施层面的大规模战略布局。与此前偏向应用层的投资不同，此次融资明确指向基础模型研发和算力基础设施——中国 AI 产业的"军备竞赛"正在从应用层下沉到底层。</p>
+</div><div class="card-meta"><span class="src">DeepSeek</span> · 5 月 28 日<a href="https://baijiahao.baidu.com/s?id=1868023469053014018">原文 →</a></div></div>
 </div>
 
 <div class="section"><div class="section-label"><span class="dot dot-purple"></span><h2>科学人文</h2><span class="count">2 篇</span></div>
 
 <div class="card hero"><div class="card-inner">
-<span class="card-tag red">深度 · 饶毅</span>
-<h3>饶毅山西大学开讲"中国科学何处去"：500 名师生的科学精神洗礼</h3>
-<p>6 月 15 日，北京大学终身讲席教授饶毅到访山西大学，面向 500 余名师生发表题为"中国科学何处去"的专题演讲。从学术道德失范到评价体系异化，从帽子文化的积弊到青年科研人员生存困境，饶毅的发言一如既往地不留情面。但他同时强调：<strong>"批评不是为了否定，而是为了让中国科学变得更好。"</strong>讲座由山西大学党委副书记主持，表明体制内正在以开放的态度直面这些讨论。</p>
-</div><div class="card-meta"><span class="src">知识分子</span> · 6 月 15 日<a href="https://mp.weixin.qq.com/s?__biz=MzA4MDYyMDMzMg==&mid=2650805425&idx=1">原文 →</a></div></div>
+<span class="card-tag red">学术文化</span>
+<h3>全员中文署名登 Science：从华科武大合作看中国学术自信的悄然转变</h3>
+<p>华科朱斌团队与武大王隆飞团队在 Science 上的合作论文，所有作者均使用<strong>中文全名署名</strong>——这在以英文名为默认选项的国际顶刊中并不常见。这一细节折射出一个更深层的趋势：越来越多的中国学者选择在国际舞台上保留自己的文化身份标识。从"取个英文名方便国际交流"到"我的中文名字就是我的学术品牌"，这种转变背后是<strong>中国基础科学实力提升带来的文化自信</strong>。当然，这也引发了关于学术国际化与文化认同之间平衡的讨论。</p>
+</div><div class="card-meta"><span class="src">知识分子</span> · 6 月<a href="https://mp.weixin.qq.com/s?__biz=MzA5Nzk2MDc5NA==&mid=2653974803&idx=1">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag purple">机构动态</span>
-<h3>北京大学饶毅实验室研究方向全览：神经递质、睡眠与 GPCR</h3>
-<p>北大前沿交叉学科研究院近日更新了饶毅实验室的研究方向介绍。实验室采用生物化学分离、遗传筛选等手段，<strong>系统寻找新的神经递质分子和调控睡眠的关键基因</strong>。其中 GPCR（G 蛋白偶联受体）是核心关注点——这类受体是最常见的药物靶点分子家族。饶毅在北大和复旦双线布局的阿尔茨海默症研究也与这些基础方向紧密关联。</p>
-</div><div class="card-meta"><span class="src">北京大学</span> · 6 月<a href="http://www.aais.pku.edu.cn/info/1402/2618.htm">原文 →</a></div></div>
+<span class="card-tag purple">产业观察</span>
+<h3>从 20 到 76：一组数字背后的中国创新药十年长征</h3>
+<p>2020 年中国全年获批创新药不足 20 款。到 2025 年，这个数字变成了 76。五年四倍增长，背后是药监改革（加速审评通道）、人才回流（大批海归科学家创业）、资本涌入（港股 18A + 科创板第五套）和基础研究积累的共同结果。<strong>但需要冷静的是：76 款中真正的 first-in-class 仍占少数</strong>——从"跟跑"到"领跑"，中国医药创新还有很长一段路要走。</p>
+</div><div class="card-meta"><span class="src">生物世界</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1868212013395775969">原文 →</a></div></div>
 </div>
 
-<div class="section"><div class="section-label"><span class="dot dot-blue"></span><h2>生信方法</h2><span class="count">3 篇</span></div>
+<div class="section"><div class="section-label"><span class="dot dot-blue"></span><h2>生信方法</h2><span class="count">2 篇</span></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag blue">前沿会议</span>
-<h3>第二届西部单细胞与空间组学论坛 6 月 25-26 日召开</h3>
-<p>单细胞与空间组学技术已成为从群体平均跨越到单细胞分辨率的核心驱动力。即将在成都召开的<strong>第二届西部单细胞与空间组学论坛</strong>将聚焦肿瘤微环境解析、免疫治疗响应预测、神经疾病单细胞图谱和药物筛选等方向。多个团队将展示 AI 驱动的单细胞数据自动注释和伪时序分析的最新进展。</p>
-</div><div class="card-meta"><span class="src">单细胞天地</span> · 6 月 25-26 日<a href="https://mp.weixin.qq.com/s?__biz=MzAxNzMzNjMxMw==&mid=2247553021&idx=2">原文 →</a></div></div>
+<span class="card-tag blue">结构预测</span>
+<h3>DNA 合成激活 RNA 切割：结构生物学计算方法如何"看见"分子开关</h3>
+<p>华科/武大 Science 论文的核心发现——DNA 聚合反应激活 RNA 切割——背后依赖<strong>冷冻电镜结构解析和分子动力学模拟</strong>的结合。研究团队通过单颗粒冷冻电镜获得了 RT-like 抗病毒酶在 DNA 合成前后的高分辨率构象变化，再通过全原子分子动力学模拟验证了构象传递路径。这套"结构+模拟"的组合方法论正在成为酶学机制研究的新标准，也是生信与结构生物学深度融合的典范。</p>
+</div><div class="card-meta"><span class="src">生信技能树</span> · 6 月<a href="https://mp.weixin.qq.com/s?__biz=MzA5MDY3ODExNQ==&mid=2651385035&idx=4">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag blue">AI + 生信</span>
-<h3>2026 年 AI+ 生物信息学技术全景盘点</h3>
-<p>从 Parse Biosciences 的 AI 降噪算法到 Singleron 的云端单细胞分析平台，从 Helixon 的蛋白质结构预测到 AI 驱动的空间转录组数据解码——<strong>AI 正在从"辅助工具"升级为生物信息学核心基础设施</strong>。最值得关注的趋势是"端到端 SaaS 化"：用户上传原始数据，云端自动完成质控、聚类、注释和可视化全流程，大幅降低了单细胞分析的技术门槛。</p>
-</div><div class="card-meta"><span class="src">生信技能树</span> · 6 月<a href="https://blog.csdn.net/yangl7/article/details/149022712">原文 →</a></div></div>
-
-<div class="card"><div class="card-inner">
-<span class="card-tag blue">工具方法</span>
-<h3>单细胞 + 空间组学数据分析的"干湿闭环"最佳实践</h3>
-<p>随着 10x Genomics、华大 Stereo-seq 和 Parse Biosciences 等平台的数据产出量持续增长，生信分析正在经历从"写脚本"到"搭管线"的转型。<strong>核心挑战不再是能不能跑通流程，而是如何确保分析结果在生物学上可重复、可验证。</strong>最新最佳实践强调三点：原始数据透明化、分析步骤容器化（Docker/Singularity）、验证环节必须回归湿实验——"干湿闭环"正在从顶刊论文的标配变成整个领域的质量底线。</p>
-</div><div class="card-meta"><span class="src">生信技能树</span> · 6 月<a href="https://space.bilibili.com/338686099/">原文 →</a></div></div>
+<span class="card-tag blue">AI + 科研</span>
+<h3>AI 编程工具 2026 年中盘点：Codex 开放生态 vs Claude Code 坚守封闭</h3>
+<p>6 月 22 日的 AI CLI 工具社区动态揭示了一个清晰的分化格局：OpenAI Codex 因开放第三方模型接入而迎来社区爆发，Qwen Code 以高性价比快速追赶；而<strong>Claude Code 坚持仅使用 Anthropic 自家模型</strong>，在 Codex 开放后开始出现用户外流。对生信领域而言，这意味着 AI 辅助编程工具的生态正在从"选什么工具"变成"工具能用什么模型"——开放生态可能更适合需要灵活调用不同模型的多变科研场景。</p>
+</div><div class="card-meta"><span class="src">GitHub</span> · 6 月 22 日<a href="https://github.com/AlexdanerZe/agents-radar/issues/383">原文 →</a></div></div>
 </div>
 
 <div class="section"><div class="section-label"><span class="dot dot-amber"></span><h2>AI 前沿</h2><span class="count">3 篇</span></div>
 
 <div class="card hero"><div class="card-inner">
-<span class="card-tag red">商业化 · 拐点</span>
-<h3>Anthropic ARR 飙至 470 亿美元：AI 商业化进入指数增长期</h3>
-<p>2026 年 6 月，AI 大模型行业的商业化正在经历历史性拐点。Anthropic 年化经常性收入（ARR）从年初的 200 亿美元飙升至<strong>470 亿美元，年增长率达 230%</strong>；OpenAI ChatGPT 月活突破 200 亿，企业 ARR 达 320 亿美元；DeepSeek 完成 500 亿元人民币融资，估值 450 亿美元。三巨头在商业模式上明显分化：Anthropic 押注企业级安全与合规，OpenAI 追求规模效应和消费级渗透，DeepSeek 走开源+性价比路线。整个行业正从"技术竞赛"进入"商业兑现"阶段。</p>
-</div><div class="card-meta"><span class="src">CSDN</span> · 6 月<a href="https://adg.csdn.net/6a309c6f10ee7a33f27da8ed.html">原文 →</a></div></div>
+<span class="card-tag red">🔥 行业地震 · 开放生态</span>
+<h3>OpenAI 自破围墙：Codex 全面开放第三方模型，Claude/DeepSeek/Gemini 随便用</h3>
+<p>6 月 18 日，OpenAI 宣布了一项震撼 AI 工具链的决定：其旗舰编程代理 Codex（包括桌面客户端、CLI 和 SDK）<strong>全面开放接入任意第三方大模型</strong>——开发者现在可以自由选择 DeepSeek、Claude、Gemini 甚至开源模型替代 OpenAI 自家模型。Codex 负责人 Tibo Sottiaux 表示"用户不应该被模型绑定"。这一举措被广泛解读为 OpenAI 的"Android 时刻"——通过开放工具层来占领入口，同时将模型层的竞争交给市场。Claude Code（仅支持 Anthropic 模型）面临直接压力，而 Qwen Code 等新兴工具则因兼容性优势而加速增长。</p>
+</div><div class="card-meta"><span class="src">TechWeb</span> · 6 月 18 日<a href="https://baijiahao.baidu.com/s?id=1868330191056508292">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag amber">国际治理</span>
-<h3>韩国成为全球第四个与 OpenAI 建立 AI 安全合作的国家</h3>
-<p>韩国科学技术信息通信部宣布与 OpenAI 正式建立战略合作伙伴关系，成为继美、英、日后<strong>全球第四个与 OpenAI 形成 AI 安全合作的国家</strong>。韩国 AI 安全研究所将与 OpenAI 共同开发兼具国际通用性与韩国本地化的评估体系，特别是在韩语大模型的偏见检测和社会情境安全评估方面。这标志着 AI 安全治理正在从"美国中心"向多极格局演变。</p>
-</div><div class="card-meta"><span class="src">GitHub</span> · 6 月 21 日<a href="https://github.com/xushankun/blog/blob/master/content/posts/ai-daily-2026-06-21.md">原文 →</a></div></div>
+<span class="card-tag amber">商业战略</span>
+<h3>OpenAI 为什么主动放弃模型锁定？工具层与模型层的战略分离</h3>
+<p>OpenAI 开放 Codex 接入第三方模型的决定，背后有三层商业逻辑：第一，<strong>工具层 vs 模型层的战略分离</strong>——用开放的 Codex 占领开发者入口，模型层的竞争交给市场，OpenAI 相信自己的模型最终会赢；第二，反垄断压力——AI 工具链的封闭生态正在引发监管关注；第三，与 GitHub Copilot 的差异化竞争——"我们支持所有模型"本身就是一个有力的市场定位。分析人士指出，这一策略若成功，将重塑整个 AI 开发工具市场的竞争格局。</p>
+</div><div class="card-meta"><span class="src">云头条</span> · 6 月 17 日<a href="https://www.yuntoutiao.com/yuntoutiao/451.html">原文 →</a></div></div>
 
 <div class="card"><div class="card-inner">
-<span class="card-tag amber">模型格局</span>
-<h3>6 月 AI 模型格局：Fable 5 称王，国产三雄崛起，两周迭代一次成新常态</h3>
-<p>2026 年 6 月的 AI 模型竞争烈度前所未有：Anthropic 推出 Claude Fable 5、谷歌发布 DiffusionGemma、月之暗面升级 Kimi K2.7 Code、智谱带来 GLM-5.2——<strong>平均每 3-4 天就有一次重要模型更新</strong>。排行榜的更新速度已经跟不上模型迭代的节奏。行业观察者指出，"模型即产品"的时代正在被"模型即基础设施"取代——真正的胜负手将从模型能力本身转向生态、分发和商业化落地。</p>
-</div><div class="card-meta"><span class="src">百家号</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1868245685909352050">原文 →</a></div></div>
+<span class="card-tag amber">实践指南</span>
+<h3>2026 大模型选型"三级策略"：不选贵的只选对的，年省 60-80% 成本</h3>
+<p>随着模型种类激增和价格战白热化，企业 AI 应用的模型选型正在从"全用旗舰"转向分层策略。最新实践指南提出<strong>"三级策略"</strong>：简单任务用轻量模型（DeepSeek V4 Flash、GPT-5.5 Mini），中等任务用中端模型（Claude Sonnet、Qwen 3.7），复杂任务才上旗舰（GPT-5.5、Claude Opus 4.8）。采用这一策略的企业报告<strong>总成本降低 60-80%，效果几乎不受影响</strong>。核心原则一句话：模型不再是身份的象征，而是按需调用的工具。</p>
+</div><div class="card-meta"><span class="src">百家号</span> · 6 月<a href="https://baijiahao.baidu.com/s?id=1868446528384000917">原文 →</a></div></div>
 </div>
 
 <div class="footer"><p>每日 7:57 AM 自动更新 · <a href="archive/">往期存档</a></p><p style="margin-top:4px">由 Claude Code 生成 · 12 个优质信源 · 深度解读每篇文章</p></div>
